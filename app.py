@@ -217,66 +217,72 @@ if 'recommendations' not in st.session_state: st.session_state.recommendations =
 if 'selected_destination' not in st.session_state: st.session_state.selected_destination = None
 
 # ============================================================================
-# UTILITY FUNCTIONS
+# UTILITY FUNCTIONS (TURBO OPTIMIZED)
 # ============================================================================
+@st.cache_data(ttl=86400) # Cache for 24 hours
+def get_pakistan_boundary():
+    """Caches the Pakistan GeoJSON to avoid redundant network hits"""
+    url = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries/PAK.geo.json"
+    return url
+
 @st.cache_data(show_spinner=False)
-def get_assets_list():
+def get_image_index():
+    """Creates a fast lookup index for all images in assets"""
     assets_dir = Path(__file__).parent / 'assets'
-    if not assets_dir.exists(): return []
+    if not assets_dir.exists(): return {}
+    index = {}
     try:
-        return list(assets_dir.iterdir())
-    except: return []
+        for file in assets_dir.iterdir():
+            if file.is_file() and file.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']:
+                clean_name = file.stem.lower().replace(" ", "").replace("_", "").replace("-", "")
+                index[clean_name] = file
+    except: pass
+    return index
 
 @st.cache_data(show_spinner=False)
 def get_destination_image(dest_name, dest_type='Nature'):
-    assets_dir = Path(__file__).parent / 'assets'
-    all_files = get_assets_list()
-    if not all_files: return None
+    image_index = get_image_index()
     search_name = dest_name.lower().replace(" ", "").replace("_", "").replace("-", "")
-    for file in all_files:
-        if file.is_file() and file.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']:
-            clean_file_name = file.stem.lower().replace(" ", "").replace("_", "").replace("-", "")
-            if clean_file_name == search_name:
-                with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+    
+    # Fast Lookup
+    file = image_index.get(search_name)
+    if file:
+        with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+
+    # Smart Keyword Match (Optimized)
     manual_keywords = {
-        "Chenab River Bank": ["chenab"], "Bala Hissar Fort": ["balahissar"],
-        "PAF Museum Karachi": ["pfmuseum", "pafmuseum"], "Anarkali Bazaar": ["anarkali"],
-        "Saidpur Village": ["saidpur"], "Banjosa Lake": ["banjosa"], "Arang Kel": ["arangkel"],
-        "Hanna Lake": ["hanna"], "Khaplu Palace": ["khaplu"], "Manthoka Waterfall": ["manthokha"],
-        "Rakaposhi View Point": ["rakaposhi"], "Shandur Pass": ["shundur", "shandur"],
-        "Taxila Museum": ["taxila"], "Ayubia National Park": ["ayubia"], "Miranjani Top": ["miranjani"],
-        "Mushkpuri Top": ["mushkpuri"], "Thandiani": ["thandiani"], "Basho Valley": ["basho"],
-        "Khewra Salt Mine": ["khewra", "saltmine"], "Safari Park": ["safari"], "Clifton Beach": ["clifton"],
-        "Churna Island": ["churna"], "Rawal Lake": ["rawal"], "Peer Sohawa": ["sohawa", "daman"],
-        "Kenjhar Lake": ["kenjhar", "sindh"], "Manchar Lake": ["manchar"]
+        "Chenab River Bank": "chenab", "Bala Hissar Fort": "balahissar",
+        "PAF Museum Karachi": "pfmuseum", "Anarkali Bazaar": "anarkali",
+        "Saidpur Village": "saidpur", "Banjosa Lake": "banjosa", "Arang Kel": "arangkel",
+        "Hanna Lake": "hanna", "Khaplu Palace": "khaplu", "Manthoka Waterfall": "manthokha",
+        "Rakaposhi View Point": "rakaposhi", "Shandur Pass": "shundur",
+        "Taxila Museum": "taxila", "Ayubia National Park": "ayubia", "Miranjani Top": "miranjani",
+        "Mushkpuri Top": "mushkpuri", "Thandiani": "thandiani", "Basho Valley": "basho",
+        "Khewra Salt Mine": "khewra", "Safari Park": "safari", "Clifton Beach": "clifton",
+        "Churna Island": "churna", "Rawal Lake": "rawal", "Peer Sohawa": "sohawa",
+        "Kenjhar Lake": "kenjhar", "Manchar Lake": "manchar"
     }
-    keywords = manual_keywords.get(dest_name, [dest_name.lower()])
-    for kw in keywords:
-        for file in all_files:
-            if file.is_file() and file.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']:
-                fname_clean = file.name.lower().replace(" ", "").replace("_", "").replace("-", "")
-                if kw.lower() in fname_clean:
-                    with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+    
+    kw = manual_keywords.get(dest_name)
+    if kw:
+        for name, path in image_index.items():
+            if kw in name:
+                with open(path, "rb") as f: return base64.b64encode(f.read()).decode()
+
+    # Fallback (Static Cache)
+    assets_dir = Path(__file__).parent / 'assets'
     specific_map = {"Peer Sohawa": "daman_e_koh.jpg", "Rawal Lake": "khanpur_dam.jpg"}
     if dest_name in specific_map:
-        img_path = assets_dir / specific_map[dest_name]
-        if img_path.exists():
-            with open(img_path, "rb") as f: return base64.b64encode(f.read()).decode()
-    category_fallbacks = {
-        'Historical': ['badshahi_mosque.jpg', 'derawar_fort.jpg', 'rohtas_fort.jpg'],
-        'Nature': ['valley.jpg', 'nature.jpg', 'hunza.jpg'],
-        'Adventure': ['adventure.jpg', 'malam_jabba.jpg'],
-        'Beach': ['hammerhead_gwadar.jpg'],
-        'City': ['islamabad.jpg', 'clock_tower_faisalabad.jpg']
-    }
-    available_fbs = [img for img in category_fallbacks.get(dest_type, []) if (assets_dir / img).exists()]
-    if not available_fbs: available_fbs = [f.name for f in all_files if f.suffix.lower() == '.jpg'][:5]
-    if available_fbs:
-        name_hash = int(hashlib.md5(dest_name.encode()).hexdigest(), 16)
-        fb_path = assets_dir / available_fbs[name_hash % len(available_fbs)]
-        if fb_path.exists():
-            with open(fb_path, "rb") as f: return base64.b64encode(f.read()).decode()
+        p = assets_dir / specific_map[dest_name]
+        if p.exists():
+            with open(p, "rb") as f: return base64.b64encode(f.read()).decode()
+            
     return None
+
+@st.cache_data(show_spinner=False)
+def cached_recommendation(prefs, budget=None, safety=True, n=5):
+    """Memoized recommendation logic for instant UI response"""
+    return recommender.recommend(preferences=prefs, budget_filter=budget, safety_only=safety, top_n=n)
 
 def destination_card_html(dest, match_percent=None, idx=None):
     img_b64 = get_destination_image(dest['Name'], dest.get('Type', 'Nature'))
@@ -315,7 +321,8 @@ def render_map(data=None, height=400):
     with st.container():
         view_state = pdk.ViewState(latitude=30.3753, longitude=69.3451, zoom=5.0, pitch=0)
         layers = []
-        pak_boundary_url = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries/PAK.geo.json"
+        # Use Cached Boundary URL
+        pak_boundary_url = get_pakistan_boundary()
         # Shining Bulb Glow Layers
         layers.append(pdk.Layer("GeoJsonLayer", pak_boundary_url, stroked=True, filled=False, get_line_color=[255, 255, 255, 40], line_width_min_pixels=12))
         layers.append(pdk.Layer("GeoJsonLayer", pak_boundary_url, stroked=True, filled=False, get_line_color=[255, 255, 255, 80], line_width_min_pixels=7))
@@ -403,7 +410,8 @@ def preferences_page():
         st.write(f"Selected: {', '.join(st.session_state.preferences)}")
         if st.button("🚀 Find My Best Matches", use_container_width=True, type="primary"):
             with st.spinner("Finding matches..."):
-                results = recommender.recommend(preferences=st.session_state.preferences, top_n=5)
+                # Turbo Optimized Recommendation
+                results = cached_recommendation(tuple(st.session_state.preferences), n=5)
                 st.session_state.recommendations = results
                 st.session_state.current_page = 'results'
                 st.rerun()
@@ -421,7 +429,8 @@ def results_page():
         budget = st.radio("Budget", ["L", "M", "H"], horizontal=True, index=1)
         budget_map = {'L': 'Low', 'M': 'Medium', 'H': 'High'}
         rec_count = st.slider("Count", 1, 15, 5)
-        st.session_state.recommendations = recommender.recommend(preferences=st.session_state.preferences, budget_filter=budget_map.get(budget), safety_only=safety, top_n=rec_count)
+        # Turbo Optimized Recommendation
+        st.session_state.recommendations = cached_recommendation(tuple(st.session_state.preferences), budget_map.get(budget), safety, rec_count)
     with col_center:
         st.markdown("### Top Matches")
         if st.session_state.recommendations is not None:
