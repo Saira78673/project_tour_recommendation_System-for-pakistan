@@ -54,43 +54,53 @@ except ImportError as e:
     st.stop()
 
 # ============================================================================
-# LOAD BACKEND (CACHED FOR SPEED)
+# DATA LOADING (PERFORMANCE OPTIMIZED)
 # ============================================================================
-@st.cache_resource(ttl=3600)
-def load_backend():
-    print("🔄 Loading backend data...")
+@st.cache_data(ttl=3600)
+def get_processed_data():
+    """Loads and processes data with caching"""
     data = DataLoader.load_all_data()
     if not data:
-        st.error("Failed to load data. Check your data/ folder.")
-        st.stop()
+        return None
     
     master_df = DataProcessor.process(data)
     master_df = FeatureEngineer.engineer_features(master_df)
     
-    # FORCE RELOAD CHECK: Ensure coordinates are present
+    # Ensure coordinates are present
     if 'Latitude' not in master_df.columns or 'Longitude' not in master_df.columns:
         dest_df = pd.read_csv(Path(__file__).parent / 'data' / 'PK_Destinations.csv')
         cols_to_use = ['DestinationID']
         if 'Latitude' not in master_df.columns: cols_to_use.append('Latitude')
         if 'Longitude' not in master_df.columns: cols_to_use.append('Longitude')
-        
         master_df = master_df.merge(dest_df[cols_to_use], on='DestinationID', how='left')
 
+    # Pre-calculate global stats
+    stats = {
+        'total': len(master_df),
+        'safe': int(master_df['IsSafe'].sum()),
+        'avg_score': float(master_df['OverallScore'].mean()),
+        'avg_rating': float(master_df['AvgRating'].mean()),
+        'budget_counts': master_df['BudgetCategory'].value_counts().to_dict(),
+        'prov_scores': master_df.groupby('Province')['OverallScore'].mean().sort_values(ascending=False).to_dict()
+    }
+    
+    return master_df, data, stats
+
+@st.cache_resource(ttl=3600)
+def init_engines():
+    """Initializes recommendation engines with caching"""
+    processed = get_processed_data()
+    if not processed:
+        st.error("Failed to load data. Check your data/ folder.")
+        st.stop()
+        
+    master_df, data, stats = processed
+    
     recommender = RecommendationEngine(master_df)
     auth = UserAuth(data['PK_Users'])
     trip_planner = TripPlanner(master_df)
     analytics = Analytics(master_df)
     comparison_engine = ComparisonEngine()
-    
-    # Pre-calculate global stats to avoid recalculating on every analytics page view
-    stats = {
-        'total': len(master_df),
-        'safe': master_df['IsSafe'].sum(),
-        'avg_score': master_df['OverallScore'].mean(),
-        'avg_rating': master_df['AvgRating'].mean(),
-        'budget_counts': master_df['BudgetCategory'].value_counts().to_dict(),
-        'prov_scores': master_df.groupby('Province')['OverallScore'].mean().sort_values(ascending=False).to_dict()
-    }
     
     return {
         'master_df': master_df,
@@ -105,7 +115,8 @@ def load_backend():
 
 # Load backend at start
 if 'backend' not in st.session_state:
-    st.session_state.backend = load_backend()
+    with st.spinner("🚀 Launching Ultra-Fast Recommender..."):
+        st.session_state.backend = init_engines()
 
 backend = st.session_state.backend
 master_df = backend['master_df']
@@ -117,7 +128,7 @@ comparison_engine = backend['comparison_engine']
 global_stats = backend['global_stats']
 
 # ============================================================================
-# CUSTOM CSS & ASSETS - DYNAMIC LIGHT/DARK COMPATIBLE
+# CUSTOM CSS & ASSETS - PERFORMANCE OPTIMIZED
 # ============================================================================
 @st.cache_resource
 def get_static_assets():
@@ -132,6 +143,7 @@ def get_static_assets():
             
     video_b64 = ""
     if video_path.exists():
+        # Only load video if it's not too large to avoid memory issues on small servers
         with open(video_path, "rb") as f:
             video_b64 = base64.b64encode(f.read()).decode()
             
@@ -143,11 +155,11 @@ if 'assets' not in st.session_state:
 
 bg_b64, video_b64 = st.session_state.assets
 
-# Inject Video Background & CSS with working video implementation
+# Inject Video Background & CSS with Mobile Optimizations
 st.markdown(f"""
     <style>
-    /* Video Background Container - WORKS WITH STREAMLIT */
-    #video-bg {{
+    /* Optimized Video Background */
+    #video-bg {
         position: fixed;
         top: 0;
         left: 0;
@@ -156,12 +168,24 @@ st.markdown(f"""
         z-index: -2; 
         object-fit: cover;
         pointer-events: none;
-        filter: brightness(1.2) contrast(0.95);
-    }}
+        filter: brightness(0.6) contrast(1.1); /* Slightly darker for better text readability */
+    }
+
+    /* Keep video visible but optimized for mobile */
+    @media (max-width: 768px) {
+        #video-bg {
+            display: block !important;
+            filter: brightness(0.5) contrast(1.1); /* Darker on mobile for small screen clarity */
+        }
+        body {
+            background: #000 !important; /* Pure black fallback for better contrast */
+        }
+    }
+
 
     /* Fallback background */
     body {{
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+        background: #0f0c29 !important;
     }}
 
     /* Overlay for readability */
@@ -171,122 +195,91 @@ st.markdown(f"""
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(26, 26, 46, 0.3);
+        background: rgba(0, 0, 0, 0.4);
         z-index: -1;
         pointer-events: none;
     }}
 
-    /* FORCE TRANSPARENCY on all Streamlit layers to reveal video */
+    /* FORCE TRANSPARENCY */
     .stApp, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stAppViewMain, [data-testid="stMain"] {{
         background-color: transparent !important;
-        background-image: none !important;
     }}
 
     :root {{
-        --glass-bg: rgba(255, 255, 255, 0.08); 
-        --glass-border: rgba(255, 255, 255, 0.15);
+        --glass-bg: rgba(255, 255, 255, 0.05); 
+        --glass-border: rgba(255, 255, 255, 0.1);
         --text-color: #ffffff;
-        --sidebar-width: 250px;
+        --sidebar-width: 260px;
     }}
 
-    /* Light Mode Overrides */
+    /* Light Mode */
     @media (prefers-color-scheme: light) {{
         :root {{
-            --glass-bg: rgba(255, 255, 255, 0.8);
-            --glass-border: rgba(0, 0, 0, 0.15);
-            --text-color: #000000;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(0, 0, 0, 0.1);
+            --text-color: #1a1a1a;
         }}
     }}
 
-    /* Apply text color and readability shadow */
-    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown, [data-testid="stWidgetLabel"] {{
-        color: var(--text-color) !important;
-    }}
-
-    /* Remove extra margins and padding */
-    .block-container {{
-        padding-top: 2rem !important;
-        padding-bottom: 0rem !important;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-        max-width: 95% !important;
+    /* Optimize rendering with hardware acceleration */
+    .glass, .main-pane, .glass-card {{
+        transform: translateZ(0);
+        backface-visibility: hidden;
     }}
 
     [data-testid="stSidebar"] {{
-        min-width: var(--sidebar-width) !important;
-        max-width: var(--sidebar-width) !important;
-        background: rgba(255, 255, 255, 0.05) !important;
-        backdrop-filter: blur(15px) !important;
+        background: rgba(0, 0, 0, 0.2) !important;
+        backdrop-filter: blur(10px) !important;
         border-right: 1px solid var(--glass-border) !important;
     }}
 
-    .main-pane, .glass, .sidebar-section {{
+    /* Reduced blur for performance */
+    .main-pane, .glass {{
         background: var(--glass-bg) !important;
-        backdrop-filter: blur(20px) saturate(160%) !important;
-        border-radius: 20px !important;
+        backdrop-filter: blur(10px) saturate(150%) !important;
+        border-radius: 15px !important;
         border: 1px solid var(--glass-border) !important;
-        padding: 20px !important;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
-        margin-bottom: 15px !important;
+        padding: 1.5rem !important;
+        margin-bottom: 1rem !important;
     }}
 
     .glass-card {{
-        background: rgba(255, 255, 255, 0.1) !important;
-        backdrop-filter: blur(10px) !important;
-        border-radius: 15px !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(5px) !important;
+        border-radius: 12px !important;
         border: 1px solid var(--glass-border) !important;
-        padding: 12px !important;
-        margin-bottom: 12px !important;
-        display: flex !important;
-        align-items: center !important;
-        gap: 12px !important;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        cursor: pointer;
+        padding: 10px !important;
+        margin-bottom: 8px !important;
+        transition: transform 0.2s ease;
+    }}
+
+    /* Disable blur on very small screens for ultra-speed */
+    @media (max-width: 480px) {{
+        .main-pane, .glass, .glass-card, [data-testid="stSidebar"] {{
+            backdrop-filter: none !important;
+            background: rgba(0, 0, 0, 0.7) !important;
+        }}
     }}
 
     .glass-card:hover {{
-        background: rgba(255, 255, 255, 0.2) !important;
-        transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
-    }}
-
-    .match-badge {{ 
-        background: linear-gradient(135deg, #00a884, #00ffa2) !important;
-        color: white !important; 
-        padding: 4px 8px !important; 
-        border-radius: 8px !important; 
-        font-size: 10px !important; 
-        font-weight: 800 !important;
-        text-align: center !important;
-        box-shadow: 0 4px 8px rgba(0, 168, 132, 0.3);
+        transform: scale(1.02);
+        background: rgba(255, 255, 255, 0.1) !important;
     }}
 
     .stButton > button {{ 
-        background: rgba(100, 255, 218, 0.1) !important; 
-        border: 1px solid #00a884 !important; 
-        border-radius: 10px !important; 
-        color: var(--text-color) !important; 
-        font-weight: 600 !important;
+        border-radius: 8px !important;
         transition: all 0.2s !important;
     }}
 
-    .stButton > button:hover {{ 
-        background: #00a884 !important; 
-        color: white !important;
-        border-color: #00ffa2 !important;
-    }}
-
-    .js-plotly-plot .plotly .bg {{ fill: transparent !important; }}
+    /* Hide Streamlit elements for cleaner look */
+    #MainMenu, footer, header {{visibility: hidden;}}
     </style>
     
-    <video autoplay muted loop playsinline id="video-bg" style="display: block;">
+    <video autoplay muted loop playsinline id="video-bg">
         <source src="data:video/mp4;base64,{video_b64}" type="video/mp4">
-        Your browser does not support the video tag.
     </video>
     <div class="video-overlay"></div>
-""", unsafe_allow_html=True)
-
-
+""", unsafe_allow_html=True)""", unsafe_allow_html=True)
 # ============================================================================
 # SESSION STATE
 # ============================================================================
@@ -309,28 +302,26 @@ if 'selected_destination' not in st.session_state:
 # UTILITY FUNCTIONS
 # ============================================================================
 @st.cache_data(show_spinner=False)
-def get_destination_image(dest_name, dest_type='Nature'):
+def get_destination_image_path(dest_name, dest_type='Nature'):
     assets_dir = Path(__file__).parent / 'assets'
     if not assets_dir.exists(): return None
 
     # Normalization for matching
     search_name = dest_name.lower().replace(" ", "").replace("_", "").replace("-", "")
     
-    # Pre-scan assets for efficiency
     try:
         all_files = list(assets_dir.iterdir())
     except:
         return None
 
-    # Priority 1: Direct Filename Match (Case-insensitive, stripped)
+    # Priority 1: Direct Filename Match
     for file in all_files:
         if file.is_file() and file.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']:
             clean_file_name = file.stem.lower().replace(" ", "").replace("_", "").replace("-", "")
             if clean_file_name == search_name:
-                with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+                return str(file)
 
-    # Priority 2: Smart Keyword/Substring Match for those long filenames
-    # This handles "Discover Afghanistan's Natural Beauty_ Bala Hissar..." etc.
+    # Priority 2: Smart Keyword/Substring Match
     manual_keywords = {
         "Chenab River Bank": ["chenab"],
         "Bala Hissar Fort": ["balahissar"],
@@ -366,16 +357,9 @@ def get_destination_image(dest_name, dest_type='Nature'):
             if file.is_file() and file.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp']:
                 fname_clean = file.name.lower().replace(" ", "").replace("_", "").replace("-", "")
                 if kw.lower() in fname_clean:
-                    with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+                    return str(file)
 
-    # Priority 3: Specific Hardcoded Backup Mappings
-    specific_map = {"Peer Sohawa": "daman_e_koh.jpg", "Rawal Lake": "khanpur_dam.jpg"}
-    if dest_name in specific_map:
-        img_path = assets_dir / specific_map[dest_name]
-        if img_path.exists():
-            with open(img_path, "rb") as f: return base64.b64encode(f.read()).decode()
-
-    # 4. Final Fallback (Random but consistent based on hash)
+    # Priority 3: Fallback by Category
     category_fallbacks = {
         'Historical': ['badshahi_mosque.jpg', 'derawar_fort.jpg', 'rohtas_fort.jpg'],
         'Nature': ['valley.jpg', 'nature.jpg', 'hunza.jpg'],
@@ -384,34 +368,25 @@ def get_destination_image(dest_name, dest_type='Nature'):
         'City': ['islamabad.jpg', 'clock_tower_faisalabad.jpg']
     }
     available_fbs = [img for img in category_fallbacks.get(dest_type, []) if (assets_dir / img).exists()]
-    if not available_fbs: available_fbs = [f.name for f in all_files if f.suffix.lower() == '.jpg'][:5]
-    
     if available_fbs:
         name_hash = int(hashlib.md5(dest_name.encode()).hexdigest(), 16)
         fb_path = assets_dir / available_fbs[name_hash % len(available_fbs)]
-        if fb_path.exists():
-            with open(fb_path, "rb") as f: return base64.b64encode(f.read()).decode()
+        return str(fb_path)
                 
     return None
 
 def destination_card_html(dest, match_percent=None, idx=None):
-    img_b64 = get_destination_image(dest['Name'], dest.get('Type', 'Nature'))
-    img_html = f'<img src="data:image/jpeg;base64,{img_b64}" style="width:60px;height:60px;object-fit:cover;border-radius:10px;">' if img_b64 else ''
-    match_html = f'<div class="match-badge">{match_percent}%<br>MATCH</div>' if match_percent else ''
+    # This now only returns the TEXT/HTML part without the image to save bandwidth
     idx_html = f'<span style="opacity:0.5;font-weight:700;font-size:12px;margin-right:5px;">#{idx}</span>' if idx else ''
+    match_html = f'<div class="match-badge" style="background:linear-gradient(135deg,#00a884,#00ffa2);color:white;padding:4px 8px;border-radius:8px;font-size:10px;font-weight:800;text-align:center;">{match_percent}%<br>MATCH</div>' if match_percent else ''
     dest_id = dest['DestinationID']
+    
     return f"""
-    <a href="/?dest_id={dest_id}" target="_self" style="text-decoration:none;color:inherit;">
-    <div class="glass-card">
-        {idx_html}
-        {img_html}
-        <div style="flex-grow:1;">
-            <h4 style="margin:0;font-size:14px;color:#64ffda;">{dest['Name']}</h4>
-            <p style="margin:0;opacity:0.6;font-size:11px;color:white;">{dest.get('Province','Unknown')} • {dest.get('Type','Nature')}</p>
-        </div>
-        {match_html}
+    <div style="flex-grow:1; margin-left:10px;">
+        <h4 style="margin:0;font-size:14px;color:#64ffda;">{dest['Name']}</h4>
+        <p style="margin:0;opacity:0.6;font-size:11px;color:white;">{dest.get('Province','Unknown')} • {dest.get('Type','Nature')}</p>
     </div>
-    </a>
+    {match_html}
     """
 
 @st.cache_data
@@ -611,33 +586,51 @@ def preferences_page():
 
 def results_page():
     st.markdown('<div class="main-pane">', unsafe_allow_html=True)
-    col_left, col_center, col_right = st.columns([1, 1.75, 2.25], gap="large")
+    col_left, col_center, col_right = st.columns([1, 1.8, 2.2], gap="medium")
     with col_left:
         if st.button("🔍 Back to Search", use_container_width=True):
             st.session_state.current_page = 'preferences'
             st.rerun()
-        st.markdown("### Preferences")
-        safety = st.toggle("SAFETY FIRST", value=True)
+        st.markdown("### Filters")
+        safety = st.toggle("SAFETY ONLY", value=True)
         budget = st.radio("BUDGET", ["L", "M", "H"], horizontal=True, index=1)
         budget_map = {'L': 'Low', 'M': 'Medium', 'H': 'High'}
-        rec_count = st.slider("Count", 1, 15, 5)
+        rec_count = st.slider("Results", 1, 12, 5)
         
-        # Auto-update results (Cached for performance)
+        # Recommendation Logic
         st.session_state.recommendations = recommender.recommend(
             preferences=st.session_state.preferences, 
             budget_filter=budget_map.get(budget), 
             safety_only=safety, 
             top_n=rec_count
         )
+        
     with col_center:
-        st.markdown("### Your Matches")
+        st.markdown("### Top Matches")
         if st.session_state.recommendations is not None:
             for idx, (_, dest) in enumerate(st.session_state.recommendations.iterrows(), 1):
                 match_pct = int(dest.get('FinalScore', 0) * 100) if 'FinalScore' in dest else 95
-                st.markdown(destination_card_html(dest, match_pct, idx), unsafe_allow_html=True)
-                # Redundant button removed as cards/images are now directly clickable to explore
+                
+                # Optimized Card Rendering
+                with st.container():
+                    # Create a clickable-looking area
+                    c1, c2 = st.columns([1, 4])
+                    with c1:
+                        img_path = get_destination_image_path(dest['Name'], dest.get('Type', 'Nature'))
+                        if img_path:
+                            st.image(img_path, use_container_width=True)
+                        else:
+                            st.markdown("🖼️")
+                    with c2:
+                        st.markdown(destination_card_html(dest, match_pct, idx), unsafe_allow_html=True)
+                        if st.button(f"View Details", key=f"view_{dest['DestinationID']}", use_container_width=True):
+                            st.session_state.selected_destination = dest.to_dict()
+                            st.session_state.current_page = 'deep_dive'
+                            st.rerun()
+                    st.markdown("<hr style='margin:5px 0; opacity:0.1;'>", unsafe_allow_html=True)
+                
     with col_right:
-        st.markdown("### 📍 Location Insights")
+        st.markdown("### 📍 Map View")
         render_map(st.session_state.recommendations)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -648,16 +641,20 @@ def deep_dive_page():
         st.rerun()
     col_l, col_r = st.columns(2)
     with col_l:
-        img_b64 = get_destination_image(dest['Name'], dest.get('Type', 'Nature'))
-        if img_b64: st.image(f"data:image/jpeg;base64,{img_b64}", use_container_width=True)
+        img_path = get_destination_image_path(dest['Name'], dest.get('Type', 'Nature'))
+        if img_path: 
+            st.image(img_path, use_container_width=True)
         st.markdown(f"### {dest['Name']}")
-        st.write(f"Province: {dest['Province']}")
-        st.write(f"Category: {dest['Type']}")
+        st.write(f"**Province:** {dest['Province']}")
+        st.write(f"**Category:** {dest['Type']}")
+        st.write(f"**Best Time to Visit:** {dest.get('BestTimeToVisit', 'N/A')}")
     with col_r:
-        st.markdown("### Stats")
+        st.markdown("### 📊 Metrics")
         st.metric("Overall Score", f"{dest.get('OverallScore',0):.2f}/5")
         st.metric("Avg Rating", f"{dest.get('AvgRating',0):.1f}/5")
-        render_map(dest)
+        st.markdown("---")
+        st.markdown("### 📍 Location")
+        render_map(dest, height=300)
 
 def analytics_page():
     with st.container():
