@@ -1,0 +1,309 @@
+ActivityID,DestinationID,ActivityName,Type,CostPerPerson,Duration,DifficultyLevel,GroupSizeMin,GroupSizeMax,AgeRestriction,Season,Rating
+1,1,Shopping Experience,Meditation,1745,4 hours,Medium,1,38,18+,Year-round,3.7
+2,1,Meditation Experience,Cultural Tour,4310,2 hours,Easy,4,26,All,Winter,4.6
+3,1,Shopping Experience,Shopping,4194,2 hours,Easy,2,38,5+,Spring,4.2
+4,2,Shopping Experience,Meditation,1061,6 hours,Medium,4,33,All,Year-round,4.3
+5,2,Photography Experience,Shopping,3779,5 hours,Hard,4,16,18+,Autumn,4.5
+6,2,Shopping Experience,Shopping,3560,7 hours,Hard,4,12,18+,Year-round,4.4
+7,3,Food Tour Experience,Food Tour,3675,7 hours,Medium,2,19,All,Spring,4.1
+8,3,Cultural Tour Experience,Adventure Sports,1739,1 hours,Easy,4,21,All,Spring,3.5
+9,3,Photography Experience,Meditation,2912,7 hours,Hard,1,49,10+,Year-round,3.6
+10,4,Photography Experience,Shopping,624,1 hours,Medium,4,45,10+,Year-round,4.9
+11,4,Photography Experience,Adventure Sports,3603,5 hours,Medium,1,31,5+,Summer,4.5
+12,5,Adventure Sports Experience,Food Tour,1642,5 hours,Hard,3,37,10+,Summer,4.2
+13,5,Camping Experience,Photography,4457,4 hours,Medium,3,23,5+,Spring,4.2
+14,5,Cultural Tour Experience,Meditation,2437,3 hours,Hard,1,21,18+,Winter,3.5
+15,6,Photography Experience,Camping,1214,3 hours,Hard,2,40,18+,Year-round,4.7
+16,6,Cultural Tour Experience,Photography,2644,6 hours,Hard,4,47,10+,Autumn,4.1
+17,6,Shopping Experience,Food Tour,2867,4 hours,Medium,2,36,18+,Autumn,3.5
+18,6,Hiking Experience,Meditation,1723,6 hours,Easy,3,30,18+,Autumn,4.0
+19,7,Adventure Sports Experience,Camping,1957,3 hours,Hard,2,39,5+,Autumn,4.3
+20,7,Photography Experience,Photography,1781,7 hours,Medium,2,49,10+,Summer,4.3
+21,8,Cultural Tour Experience,Camping,2463,1 hours,Hard,3,46,5+,Summer,3.7
+22,8,Hiking Experience,Photography,2169,1 hours,Hard,2,21,5+,Autumn,4.6
+23,9,Meditation Experience,Adventure Sports,1703,5 hours,Easy,2,24,All,Autumn,3.7
+24,9,Adventure Sports Experience,Adventure Sports,842,5 hours,Hard,3,31,5+,Year-round,3.9
+25,9,Shopping Experience,Hiking,4035,6 hours,Easy,3,33,10+,Year-round,4.8
+26,10,Photography Experience,Adventure Sports,1144,2 hours,Medium,3,24,18+,Spring,4.2
+27,10,Photography Experience,Cultural Tour,2672,1 hours,Easy,1,47,10+,Spring,4.3
+28,10,Shopping Experience,Cultural Tour,2868,6 hours,Medium,1,29,5+,Summer,4.5
+29,11,Cultural Tour Experience,Meditation,2720,3 hours,Easy,1,25,10+,Spring,4.4
+30,11,Shopping Experience,Shopping,4562,6 hours,Hard,4,41,10+,Year-round,4.4
+31,11,Hiking Experience,Cultural Tour,1655,7 hours,Hard,4,30,5+,Summer,4.1
+32,12,Food Tour Experience,Cultural Tour,2533,7 hours,Easy,1,24,10+,Summer,4.3
+33,12,Hiking Experience,Shopping,3886,5 hours,Hard,1,47,All,Summer,3.6
+34,12,Hiking Experience,Hiking,4864,6 hours,Hard,2,15,5+,Spring,4.5
+35,13,Camping Experience,Camping,1999,7 hours,Hard,2,36,5+,Winter,4.3
+36,13,Adventure Sports Experience,Adventure Sports,1786,5 hours,Hard,2,35,10+,Spring,4.7
+37,13,Shopping Experience,Photography,2341,6 hours,Easy,2,22,All,Winter,5.0
+38,13,Adventure Sports Experience,Food Tour,1289,2 hours,Medium,4,18,18+,Winter,4.3
+39,14,Photography Experience,Food Tour,1661,7 hours,Hard,2,23,All,Summer,4.0
+40,14,Food Tour Experience,Adventure Sports,1306,7 hours,Easy,4,37,All,Winter,3.9
+41,14,Shopping Experience,Meditation,3566,1 hours,Hard,2,26,18+,Year-round,4.1
+42,15,Camping Experience,Food Tour,3211,7 hours,Medium,4,21,18+,Summer,3.8
+43,15,Meditation Experience,Adventure Sports,3155,5 hours,Medium,3,10,18+,Winter,4.6
+44,15,Hiking Experience,Cultural Tour,4713,5 hours,Hard,1,33,All,Autumn,3.6
+45,16,Photography Experience,Food Tour,2907,7 hours,Easy,1,32,10+,Autumn,4.7
+46,16,Adventure Sports Experience,Shopping,4381,7 hours,Medium,4,11,All,Summer,4.7
+47,16,Adventure Sports Experience,Cultural Tour,2156,5 hours,Hard,2,38,All,Spring,3.6
+48,17,Food Tour Experience,Food Tour,4895,3 hours,Hard,4,11,5+,Summer,4.8
+49,17,Food Tour Experience,Hiking,4800,3 hours,Medium,4,35,All,Autumn,3.9
+50,17,Shopping Experience,Cultural Tour,2223,7 hours,Medium,4,19,10+,Autumn,4.3
+51,17,Photography Experience,Meditation,1765,5 hours,Hard,2,49,All,Winter,3.8
+52,18,Photography Experience,Photography,1032,6 hours,Hard,4,40,10+,Summer,3.6
+53,18,Photography Experience,Photography,2709,2 hours,Easy,4,20,5+,Winter,3.8
+54,19,Hiking Experience,Shopping,1685,1 hours,Medium,2,23,18+,Summer,4.9
+55,19,Cultural Tour Experience,Photography,3678,1 hours,Easy,1,45,18+,Year-round,3.5
+56,20,Camping Experience,Hiking,2776,4 hours,Hard,1,35,18+,Spring,4.9
+57,20,Cultural Tour Experience,Food Tour,1938,1 hours,Medium,2,26,All,Winter,4.2
+58,20,Food Tour Experience,Camping,4508,5 hours,Easy,1,13,All,Autumn,4.8
+59,21,Adventure Sports Experience,Adventure Sports,4238,4 hours,Medium,4,12,10+,Summer,4.1
+60,21,Meditation Experience,Meditation,3351,6 hours,Medium,3,12,10+,Spring,4.1
+61,22,Cultural Tour Experience,Photography,3443,3 hours,Hard,4,20,All,Spring,4.9
+62,22,Food Tour Experience,Adventure Sports,927,6 hours,Medium,3,13,5+,Year-round,3.9
+63,22,Adventure Sports Experience,Camping,1158,3 hours,Hard,2,21,18+,Summer,3.7
+64,23,Camping Experience,Shopping,3747,3 hours,Medium,4,49,10+,Autumn,3.7
+65,23,Shopping Experience,Camping,776,4 hours,Medium,1,31,18+,Autumn,4.2
+66,23,Photography Experience,Meditation,3096,5 hours,Medium,1,36,All,Autumn,4.5
+67,23,Meditation Experience,Meditation,1041,3 hours,Medium,4,47,18+,Spring,4.7
+68,24,Shopping Experience,Meditation,2256,7 hours,Hard,3,19,18+,Summer,3.6
+69,24,Camping Experience,Food Tour,824,2 hours,Medium,2,35,All,Year-round,4.6
+70,24,Food Tour Experience,Meditation,1345,5 hours,Easy,4,45,All,Summer,3.5
+71,25,Food Tour Experience,Cultural Tour,3031,6 hours,Easy,4,19,5+,Autumn,4.5
+72,25,Shopping Experience,Shopping,3287,2 hours,Easy,1,27,5+,Year-round,4.2
+73,25,Adventure Sports Experience,Hiking,825,6 hours,Hard,4,21,All,Summer,3.9
+74,26,Cultural Tour Experience,Camping,3534,5 hours,Medium,4,35,10+,Autumn,4.8
+75,26,Meditation Experience,Camping,2163,5 hours,Medium,4,20,5+,Summer,4.9
+76,26,Food Tour Experience,Cultural Tour,4830,7 hours,Easy,4,36,All,Winter,4.4
+77,26,Food Tour Experience,Photography,1528,2 hours,Hard,3,26,All,Spring,3.8
+78,27,Adventure Sports Experience,Food Tour,4802,7 hours,Hard,4,42,18+,Spring,4.6
+79,27,Hiking Experience,Cultural Tour,720,4 hours,Easy,2,11,10+,Spring,4.5
+80,27,Cultural Tour Experience,Camping,1100,1 hours,Hard,2,36,All,Summer,4.0
+81,28,Food Tour Experience,Camping,867,3 hours,Medium,4,10,10+,Autumn,4.6
+82,28,Hiking Experience,Shopping,1198,4 hours,Medium,4,36,18+,Spring,4.3
+83,28,Cultural Tour Experience,Food Tour,2059,4 hours,Hard,2,11,10+,Year-round,4.7
+84,29,Food Tour Experience,Photography,2402,5 hours,Hard,2,21,18+,Spring,4.1
+85,29,Photography Experience,Cultural Tour,2391,7 hours,Easy,3,36,5+,Summer,4.4
+86,29,Meditation Experience,Shopping,566,5 hours,Medium,2,16,5+,Year-round,4.4
+87,29,Meditation Experience,Meditation,1196,3 hours,Medium,3,36,10+,Summer,3.7
+88,30,Food Tour Experience,Camping,4342,3 hours,Hard,4,26,18+,Winter,3.5
+89,30,Adventure Sports Experience,Adventure Sports,3880,7 hours,Medium,4,34,10+,Summer,3.6
+90,30,Hiking Experience,Photography,2064,5 hours,Easy,3,11,All,Year-round,3.5
+91,30,Food Tour Experience,Meditation,1394,1 hours,Easy,2,34,5+,Autumn,3.9
+92,31,Shopping Experience,Photography,888,2 hours,Hard,3,20,10+,Summer,3.9
+93,31,Adventure Sports Experience,Cultural Tour,803,4 hours,Medium,2,15,10+,Autumn,3.5
+94,31,Shopping Experience,Hiking,4755,2 hours,Medium,1,23,All,Summer,4.2
+95,32,Adventure Sports Experience,Food Tour,2479,5 hours,Medium,1,40,5+,Spring,4.5
+96,32,Meditation Experience,Photography,4317,2 hours,Easy,4,10,All,Autumn,4.2
+97,32,Hiking Experience,Hiking,529,3 hours,Easy,4,14,5+,Year-round,4.0
+98,33,Cultural Tour Experience,Food Tour,4017,1 hours,Hard,4,47,18+,Year-round,5.0
+99,33,Camping Experience,Hiking,1861,5 hours,Medium,3,12,All,Autumn,4.4
+100,33,Cultural Tour Experience,Food Tour,1686,6 hours,Hard,3,26,10+,Autumn,3.6
+101,34,Shopping Experience,Food Tour,1762,5 hours,Easy,2,37,18+,Year-round,4.4
+102,34,Adventure Sports Experience,Photography,3166,7 hours,Medium,1,49,5+,Spring,4.6
+103,34,Food Tour Experience,Adventure Sports,4607,1 hours,Easy,2,47,18+,Winter,3.6
+104,34,Camping Experience,Cultural Tour,1311,7 hours,Hard,1,27,18+,Summer,4.4
+105,35,Shopping Experience,Photography,2025,6 hours,Medium,1,48,All,Spring,3.9
+106,35,Photography Experience,Shopping,2112,4 hours,Medium,1,43,18+,Winter,4.9
+107,35,Cultural Tour Experience,Cultural Tour,574,1 hours,Hard,3,18,10+,Summer,3.6
+108,35,Camping Experience,Cultural Tour,1687,7 hours,Hard,4,27,All,Year-round,3.7
+109,36,Photography Experience,Photography,4379,3 hours,Hard,1,12,18+,Winter,4.0
+110,36,Adventure Sports Experience,Photography,1016,5 hours,Easy,2,29,10+,Winter,4.5
+111,36,Cultural Tour Experience,Photography,1090,4 hours,Easy,3,21,5+,Spring,4.0
+112,37,Photography Experience,Photography,1879,1 hours,Hard,3,10,18+,Winter,3.8
+113,37,Shopping Experience,Food Tour,1885,2 hours,Hard,1,39,10+,Spring,3.8
+114,38,Food Tour Experience,Adventure Sports,3382,1 hours,Hard,1,22,10+,Winter,4.7
+115,38,Food Tour Experience,Camping,1591,6 hours,Easy,2,11,All,Winter,4.1
+116,39,Meditation Experience,Adventure Sports,3857,2 hours,Easy,2,19,All,Spring,4.1
+117,39,Hiking Experience,Shopping,3354,5 hours,Medium,2,48,5+,Summer,4.7
+118,40,Shopping Experience,Camping,1133,7 hours,Medium,4,33,5+,Autumn,4.2
+119,40,Camping Experience,Hiking,561,6 hours,Medium,2,33,18+,Autumn,4.2
+120,40,Meditation Experience,Camping,3692,5 hours,Easy,3,41,18+,Spring,4.4
+121,41,Hiking Experience,Camping,4768,3 hours,Easy,2,24,10+,Spring,4.9
+122,41,Photography Experience,Camping,3830,6 hours,Easy,2,28,All,Winter,4.7
+123,41,Food Tour Experience,Hiking,1461,4 hours,Hard,2,11,5+,Spring,4.3
+124,42,Cultural Tour Experience,Cultural Tour,3924,4 hours,Medium,4,19,18+,Year-round,4.9
+125,42,Meditation Experience,Photography,3311,7 hours,Medium,3,11,10+,Year-round,4.1
+126,42,Shopping Experience,Camping,2422,1 hours,Medium,1,23,10+,Year-round,4.1
+127,42,Hiking Experience,Shopping,4041,5 hours,Hard,3,15,5+,Spring,4.1
+128,43,Adventure Sports Experience,Cultural Tour,1899,2 hours,Hard,4,39,18+,Autumn,4.0
+129,43,Meditation Experience,Cultural Tour,836,4 hours,Easy,2,29,All,Year-round,4.9
+130,43,Photography Experience,Photography,1473,7 hours,Hard,1,35,All,Summer,3.7
+131,44,Cultural Tour Experience,Meditation,3877,6 hours,Easy,2,12,18+,Autumn,4.6
+132,44,Camping Experience,Hiking,1371,7 hours,Easy,3,20,18+,Year-round,4.3
+133,44,Food Tour Experience,Adventure Sports,3556,6 hours,Medium,4,27,10+,Summer,4.5
+134,44,Food Tour Experience,Food Tour,3245,5 hours,Medium,1,15,5+,Spring,3.9
+135,45,Camping Experience,Shopping,4097,5 hours,Easy,2,14,All,Year-round,4.9
+136,45,Food Tour Experience,Food Tour,2348,2 hours,Medium,4,45,All,Spring,4.6
+137,46,Cultural Tour Experience,Adventure Sports,2822,2 hours,Hard,3,46,5+,Spring,4.5
+138,46,Food Tour Experience,Adventure Sports,3895,4 hours,Hard,1,25,18+,Winter,4.0
+139,46,Adventure Sports Experience,Meditation,4978,5 hours,Easy,3,21,5+,Winter,3.7
+140,47,Photography Experience,Shopping,695,6 hours,Hard,2,10,5+,Summer,4.4
+141,47,Hiking Experience,Camping,1386,1 hours,Hard,1,24,10+,Spring,3.8
+142,47,Meditation Experience,Food Tour,2681,5 hours,Hard,3,17,10+,Summer,4.0
+143,47,Hiking Experience,Cultural Tour,3179,3 hours,Hard,3,27,All,Autumn,4.1
+144,48,Shopping Experience,Hiking,2456,4 hours,Easy,2,29,5+,Summer,4.3
+145,48,Shopping Experience,Hiking,2292,1 hours,Easy,1,29,5+,Winter,3.6
+146,48,Hiking Experience,Adventure Sports,4167,6 hours,Easy,4,14,18+,Spring,4.9
+147,48,Adventure Sports Experience,Hiking,2769,4 hours,Medium,2,34,All,Summer,4.7
+148,49,Meditation Experience,Photography,3712,4 hours,Medium,3,45,All,Winter,3.9
+149,49,Camping Experience,Food Tour,4760,7 hours,Hard,4,34,18+,Winter,4.0
+150,49,Shopping Experience,Meditation,848,2 hours,Easy,2,25,18+,Spring,5.0
+151,49,Camping Experience,Photography,1965,4 hours,Easy,4,10,All,Winter,4.1
+152,50,Shopping Experience,Hiking,1016,2 hours,Medium,1,45,10+,Year-round,4.8
+153,50,Meditation Experience,Hiking,819,3 hours,Hard,2,21,All,Summer,4.7
+154,50,Hiking Experience,Food Tour,2218,3 hours,Easy,2,37,18+,Summer,5.0
+155,50,Cultural Tour Experience,Shopping,1594,6 hours,Hard,3,47,5+,Winter,4.3
+156,51,Meditation Experience,Adventure Sports,2028,1 hours,Easy,2,35,10+,Summer,4.5
+157,51,Cultural Tour Experience,Food Tour,3904,5 hours,Hard,4,27,5+,Spring,4.4
+158,52,Photography Experience,Shopping,714,1 hours,Medium,3,42,All,Winter,4.4
+159,52,Food Tour Experience,Photography,2872,3 hours,Easy,2,40,All,Year-round,3.8
+160,52,Food Tour Experience,Photography,2831,2 hours,Easy,2,38,5+,Winter,4.7
+161,53,Cultural Tour Experience,Shopping,1698,6 hours,Hard,4,41,10+,Spring,4.8
+162,53,Adventure Sports Experience,Shopping,2179,6 hours,Hard,1,25,10+,Spring,4.2
+163,54,Photography Experience,Adventure Sports,3081,4 hours,Easy,4,24,10+,Year-round,4.8
+164,54,Food Tour Experience,Hiking,3824,1 hours,Medium,3,44,All,Autumn,4.5
+165,54,Hiking Experience,Hiking,3991,4 hours,Easy,1,48,All,Winter,3.5
+166,55,Meditation Experience,Meditation,972,5 hours,Hard,4,23,5+,Autumn,3.6
+167,55,Food Tour Experience,Food Tour,2816,4 hours,Hard,4,13,10+,Winter,4.3
+168,55,Photography Experience,Hiking,1634,6 hours,Medium,3,35,All,Winter,3.7
+169,55,Shopping Experience,Camping,2413,2 hours,Easy,3,46,5+,Autumn,5.0
+170,56,Hiking Experience,Camping,2365,2 hours,Medium,4,37,5+,Year-round,4.4
+171,56,Photography Experience,Cultural Tour,4408,2 hours,Hard,2,11,18+,Summer,4.2
+172,56,Shopping Experience,Photography,4630,2 hours,Easy,2,40,18+,Spring,4.0
+173,57,Shopping Experience,Adventure Sports,1412,3 hours,Medium,4,44,All,Summer,4.4
+174,57,Hiking Experience,Photography,3938,5 hours,Medium,4,26,5+,Summer,4.9
+175,57,Cultural Tour Experience,Cultural Tour,1371,7 hours,Hard,4,45,10+,Year-round,4.9
+176,57,Camping Experience,Camping,1113,1 hours,Hard,4,13,All,Summer,4.8
+177,58,Food Tour Experience,Adventure Sports,3691,6 hours,Medium,1,30,10+,Winter,3.8
+178,58,Food Tour Experience,Meditation,2555,4 hours,Hard,2,25,5+,Year-round,4.8
+179,59,Meditation Experience,Adventure Sports,2515,1 hours,Easy,1,36,All,Winter,4.8
+180,59,Hiking Experience,Photography,2654,5 hours,Easy,4,39,5+,Year-round,5.0
+181,59,Hiking Experience,Camping,845,7 hours,Hard,3,17,5+,Spring,3.5
+182,59,Camping Experience,Shopping,2156,5 hours,Hard,1,46,All,Autumn,4.2
+183,60,Adventure Sports Experience,Food Tour,3881,2 hours,Hard,1,14,5+,Winter,3.6
+184,60,Cultural Tour Experience,Photography,571,3 hours,Hard,1,22,All,Autumn,4.6
+185,61,Camping Experience,Meditation,2694,5 hours,Easy,2,15,10+,Autumn,5.0
+186,61,Meditation Experience,Meditation,4245,3 hours,Hard,3,42,10+,Winter,3.5
+187,61,Shopping Experience,Meditation,1547,7 hours,Hard,2,23,10+,Summer,4.1
+188,62,Adventure Sports Experience,Hiking,787,4 hours,Easy,3,42,18+,Winter,3.9
+189,62,Hiking Experience,Hiking,3396,2 hours,Hard,2,17,5+,Summer,3.8
+190,62,Shopping Experience,Adventure Sports,994,4 hours,Hard,1,44,18+,Winter,3.8
+191,62,Hiking Experience,Cultural Tour,4230,6 hours,Hard,3,23,10+,Summer,3.7
+192,63,Camping Experience,Food Tour,2824,4 hours,Hard,2,42,All,Spring,3.6
+193,63,Cultural Tour Experience,Adventure Sports,3755,2 hours,Medium,4,47,5+,Autumn,4.2
+194,63,Photography Experience,Food Tour,1707,1 hours,Hard,4,45,All,Autumn,4.4
+195,64,Food Tour Experience,Meditation,4427,7 hours,Medium,1,17,18+,Year-round,4.1
+196,64,Cultural Tour Experience,Shopping,3237,3 hours,Easy,4,13,5+,Winter,3.8
+197,64,Cultural Tour Experience,Adventure Sports,4647,4 hours,Easy,4,25,18+,Summer,3.7
+198,65,Shopping Experience,Cultural Tour,4570,2 hours,Hard,4,31,18+,Summer,4.1
+199,65,Hiking Experience,Photography,4147,6 hours,Easy,2,18,5+,Year-round,3.9
+200,65,Meditation Experience,Camping,2050,2 hours,Hard,2,20,All,Winter,4.5
+201,65,Meditation Experience,Photography,4959,1 hours,Hard,2,49,18+,Autumn,3.7
+202,66,Shopping Experience,Food Tour,3532,1 hours,Easy,2,30,All,Summer,3.5
+203,66,Food Tour Experience,Shopping,3363,5 hours,Hard,4,30,18+,Spring,3.9
+204,66,Photography Experience,Camping,2334,3 hours,Hard,2,14,All,Summer,4.6
+205,66,Food Tour Experience,Meditation,4848,5 hours,Hard,1,47,18+,Winter,4.8
+206,67,Meditation Experience,Cultural Tour,3288,4 hours,Easy,1,24,18+,Winter,4.6
+207,67,Food Tour Experience,Cultural Tour,2208,6 hours,Easy,1,11,5+,Summer,4.7
+208,67,Cultural Tour Experience,Hiking,2727,5 hours,Easy,4,36,18+,Spring,4.2
+209,68,Shopping Experience,Camping,4229,1 hours,Easy,3,16,All,Winter,3.8
+210,68,Shopping Experience,Camping,4119,3 hours,Medium,1,40,5+,Autumn,4.6
+211,69,Cultural Tour Experience,Hiking,1395,2 hours,Medium,1,42,All,Year-round,4.7
+212,69,Photography Experience,Shopping,4092,2 hours,Hard,4,39,10+,Spring,3.8
+213,69,Hiking Experience,Shopping,3386,1 hours,Easy,1,20,10+,Autumn,3.6
+214,69,Meditation Experience,Cultural Tour,604,2 hours,Medium,4,39,All,Spring,4.1
+215,70,Photography Experience,Cultural Tour,1551,2 hours,Hard,4,30,5+,Autumn,4.4
+216,70,Photography Experience,Meditation,3242,1 hours,Medium,4,34,5+,Summer,3.7
+217,71,Adventure Sports Experience,Meditation,4327,6 hours,Medium,2,32,18+,Spring,4.0
+218,71,Shopping Experience,Adventure Sports,1064,3 hours,Hard,4,26,All,Autumn,3.6
+219,72,Meditation Experience,Food Tour,2174,7 hours,Hard,2,15,10+,Winter,4.6
+220,72,Hiking Experience,Photography,1830,4 hours,Hard,3,22,10+,Autumn,5.0
+221,72,Hiking Experience,Hiking,2083,1 hours,Easy,4,49,18+,Winter,4.3
+222,72,Cultural Tour Experience,Meditation,1546,5 hours,Medium,1,23,10+,Summer,4.7
+223,73,Photography Experience,Photography,692,1 hours,Hard,4,30,10+,Autumn,4.4
+224,73,Food Tour Experience,Adventure Sports,610,4 hours,Hard,1,23,10+,Autumn,4.0
+225,73,Adventure Sports Experience,Adventure Sports,796,6 hours,Easy,2,45,All,Summer,4.2
+226,73,Food Tour Experience,Adventure Sports,571,6 hours,Hard,2,13,5+,Autumn,3.7
+227,74,Shopping Experience,Hiking,4214,5 hours,Medium,2,35,All,Autumn,4.6
+228,74,Adventure Sports Experience,Food Tour,2438,7 hours,Hard,4,42,5+,Winter,4.7
+229,75,Shopping Experience,Adventure Sports,3971,4 hours,Easy,4,42,10+,Summer,3.8
+230,75,Shopping Experience,Camping,3358,7 hours,Hard,2,11,5+,Autumn,4.7
+231,75,Shopping Experience,Photography,3571,2 hours,Medium,1,30,18+,Spring,4.7
+232,76,Cultural Tour Experience,Cultural Tour,4600,7 hours,Easy,1,27,5+,Autumn,3.6
+233,76,Photography Experience,Camping,4764,1 hours,Easy,2,43,18+,Winter,3.9
+234,77,Camping Experience,Photography,4635,7 hours,Easy,3,48,All,Year-round,3.9
+235,77,Shopping Experience,Shopping,4311,4 hours,Easy,2,37,10+,Autumn,4.3
+236,77,Camping Experience,Meditation,3478,4 hours,Medium,2,47,5+,Autumn,4.6
+237,78,Photography Experience,Shopping,3064,4 hours,Hard,1,25,5+,Spring,5.0
+238,78,Adventure Sports Experience,Adventure Sports,3947,3 hours,Hard,2,45,18+,Year-round,4.5
+239,78,Adventure Sports Experience,Camping,2643,6 hours,Medium,4,17,10+,Spring,3.9
+240,78,Hiking Experience,Food Tour,4508,7 hours,Easy,2,27,All,Spring,4.8
+241,79,Photography Experience,Adventure Sports,2017,5 hours,Medium,1,47,5+,Year-round,4.3
+242,79,Cultural Tour Experience,Cultural Tour,4737,5 hours,Easy,4,48,All,Spring,4.1
+243,80,Food Tour Experience,Hiking,3411,7 hours,Hard,2,23,10+,Summer,3.7
+244,80,Camping Experience,Adventure Sports,3945,4 hours,Hard,3,28,5+,Spring,3.9
+245,80,Meditation Experience,Camping,568,6 hours,Easy,3,17,10+,Autumn,4.4
+246,80,Photography Experience,Photography,3869,3 hours,Easy,4,25,5+,Spring,4.4
+247,81,Photography Experience,Food Tour,4181,5 hours,Medium,4,32,18+,Summer,3.8
+248,81,Adventure Sports Experience,Hiking,3275,5 hours,Easy,2,25,18+,Summer,4.3
+249,81,Meditation Experience,Cultural Tour,3738,1 hours,Easy,1,18,All,Autumn,3.8
+250,81,Shopping Experience,Food Tour,526,6 hours,Hard,1,39,10+,Spring,4.4
+251,82,Cultural Tour Experience,Adventure Sports,2248,6 hours,Easy,4,47,All,Winter,3.6
+252,82,Food Tour Experience,Adventure Sports,2524,3 hours,Medium,1,46,All,Autumn,4.4
+253,82,Shopping Experience,Hiking,2932,2 hours,Hard,3,30,18+,Summer,3.9
+254,82,Cultural Tour Experience,Meditation,4082,6 hours,Hard,2,32,18+,Spring,4.6
+255,83,Camping Experience,Adventure Sports,1300,4 hours,Hard,4,29,All,Spring,3.8
+256,83,Meditation Experience,Adventure Sports,1481,5 hours,Easy,1,18,18+,Year-round,4.9
+257,83,Food Tour Experience,Food Tour,1973,2 hours,Medium,3,47,10+,Autumn,4.9
+258,83,Adventure Sports Experience,Camping,2155,4 hours,Medium,4,15,All,Summer,4.1
+259,84,Photography Experience,Hiking,3623,5 hours,Easy,2,26,5+,Spring,4.7
+260,84,Meditation Experience,Adventure Sports,2809,4 hours,Hard,1,44,10+,Summer,4.2
+261,85,Camping Experience,Adventure Sports,4303,6 hours,Medium,2,45,All,Year-round,3.8
+262,85,Hiking Experience,Adventure Sports,1204,5 hours,Medium,3,41,10+,Spring,4.5
+263,86,Adventure Sports Experience,Meditation,1936,7 hours,Hard,3,36,5+,Year-round,4.4
+264,86,Shopping Experience,Shopping,684,4 hours,Medium,1,44,All,Winter,4.4
+265,86,Food Tour Experience,Shopping,1786,2 hours,Easy,4,31,10+,Autumn,4.3
+266,87,Meditation Experience,Food Tour,3010,5 hours,Easy,2,37,5+,Summer,4.9
+267,87,Meditation Experience,Hiking,3991,7 hours,Hard,1,38,5+,Summer,4.9
+268,87,Shopping Experience,Adventure Sports,1289,1 hours,Hard,1,14,18+,Winter,4.0
+269,88,Meditation Experience,Hiking,1274,4 hours,Easy,3,24,10+,Winter,4.6
+270,88,Adventure Sports Experience,Photography,2564,5 hours,Medium,2,22,18+,Summer,4.5
+271,88,Photography Experience,Food Tour,508,6 hours,Hard,3,18,18+,Year-round,3.6
+272,89,Camping Experience,Food Tour,3322,4 hours,Hard,3,29,All,Summer,3.5
+273,89,Cultural Tour Experience,Meditation,1865,1 hours,Easy,4,31,10+,Summer,4.8
+274,89,Food Tour Experience,Food Tour,2351,2 hours,Medium,2,36,10+,Year-round,4.7
+275,89,Shopping Experience,Food Tour,3279,7 hours,Medium,1,13,10+,Autumn,4.2
+276,90,Hiking Experience,Meditation,4442,6 hours,Medium,3,25,All,Winter,4.3
+277,90,Camping Experience,Hiking,729,2 hours,Medium,1,35,All,Summer,3.8
+278,91,Meditation Experience,Food Tour,581,6 hours,Medium,1,29,10+,Winter,4.5
+279,91,Photography Experience,Cultural Tour,1422,1 hours,Hard,1,13,18+,Summer,3.5
+280,91,Photography Experience,Shopping,3941,1 hours,Easy,3,22,All,Spring,3.7
+281,91,Hiking Experience,Cultural Tour,2560,6 hours,Hard,4,42,10+,Year-round,4.5
+282,92,Shopping Experience,Shopping,4954,1 hours,Easy,1,31,10+,Winter,4.3
+283,92,Cultural Tour Experience,Food Tour,948,1 hours,Medium,2,28,5+,Year-round,4.6
+284,92,Food Tour Experience,Cultural Tour,1448,1 hours,Easy,1,28,All,Summer,4.4
+285,93,Adventure Sports Experience,Photography,1070,1 hours,Medium,1,46,18+,Autumn,4.8
+286,93,Food Tour Experience,Adventure Sports,2306,7 hours,Easy,4,29,5+,Autumn,3.8
+287,94,Photography Experience,Food Tour,3580,3 hours,Hard,1,31,10+,Winter,3.8
+288,94,Shopping Experience,Camping,1544,2 hours,Medium,1,18,5+,Year-round,4.6
+289,94,Hiking Experience,Cultural Tour,1629,1 hours,Medium,2,48,All,Year-round,3.6
+290,94,Photography Experience,Cultural Tour,4094,2 hours,Hard,3,43,18+,Autumn,3.7
+291,95,Camping Experience,Photography,2855,5 hours,Hard,2,34,18+,Spring,4.7
+292,95,Adventure Sports Experience,Meditation,3262,3 hours,Hard,1,17,All,Autumn,4.5
+293,95,Shopping Experience,Photography,806,4 hours,Medium,1,25,10+,Summer,3.5
+294,96,Cultural Tour Experience,Hiking,2073,5 hours,Hard,2,30,18+,Spring,4.9
+295,96,Photography Experience,Adventure Sports,2274,7 hours,Medium,2,30,18+,Autumn,3.6
+296,96,Food Tour Experience,Hiking,3181,1 hours,Hard,1,39,10+,Autumn,3.7
+297,96,Meditation Experience,Photography,4981,7 hours,Medium,3,23,5+,Spring,4.7
+298,97,Camping Experience,Cultural Tour,1559,7 hours,Hard,4,31,10+,Summer,3.7
+299,97,Food Tour Experience,Hiking,4082,1 hours,Medium,3,27,5+,Winter,3.6
+300,98,Hiking Experience,Meditation,3069,5 hours,Easy,3,28,5+,Autumn,4.1
+301,98,Adventure Sports Experience,Shopping,4566,4 hours,Medium,4,29,All,Spring,4.5
+302,98,Camping Experience,Food Tour,2359,1 hours,Medium,1,39,10+,Spring,4.0
+303,98,Food Tour Experience,Shopping,4324,2 hours,Medium,3,16,5+,Spring,4.3
+304,99,Photography Experience,Meditation,2807,6 hours,Easy,1,32,All,Year-round,4.8
+305,99,Camping Experience,Meditation,3902,5 hours,Medium,4,17,5+,Winter,4.4
+306,100,Photography Experience,Meditation,2287,2 hours,Medium,3,25,10+,Winter,3.5
+307,100,Food Tour Experience,Cultural Tour,1159,1 hours,Medium,3,32,10+,Summer,4.4
+308,100,Camping Experience,Shopping,1968,4 hours,Hard,3,17,All,Spring,4.1

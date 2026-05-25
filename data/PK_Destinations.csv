@@ -1,0 +1,101 @@
+DestinationID,Name,Province,Type,Popularity,BestTimeToVisit,Latitude,Longitude
+1,Badshahi Mosque,Punjab,Historical,9.2,Oct-Mar,31.5882,74.3103
+2,Minar-e-Pakistan,Punjab,Historical,8.5,Oct-Mar,31.5925,74.3095
+3,Shalimar Gardens,Punjab,Historical,8.0,Oct-Mar,31.5872,74.382
+4,Mazar-e-Quaid,Sindh,Historical,9.0,Oct-May,24.8745,67.0396
+5,Mohatta Palace,Sindh,Historical,8.2,Oct-May,24.8143,67.033
+6,Churna Island,Sindh,Adventure,8.8,Nov-Feb,24.8967,66.6067
+7,Faisal Mosque,Islamabad,Historical,9.5,Mar-Nov,33.7297,73.0372
+8,Daman-e-Koh,Islamabad,Nature,8.7,Mar-Nov,33.7431,73.0569
+9,Shah Rukne Alam,Punjab,Historical,8.9,Oct-Mar,30.2014,71.4789
+10,Tomb of Bahauddin Zakariya,Punjab,Historical,8.4,Oct-Mar,30.2016,71.4776
+11,Clock Tower Faisalabad,Punjab,Historical,7.5,Oct-Mar,31.4187,73.0791
+12,Qissa Khwani Bazaar,Khyber Pakhtunkhwa,Historical,8.1,Oct-Apr,34.0097,71.5725
+13,Bala Hissar Fort,Khyber Pakhtunkhwa,Historical,8.3,Oct-Apr,34.0121,71.5746
+14,Malam Jabba,Khyber Pakhtunkhwa,Adventure,9.1,Dec-Mar,34.7997,72.57
+15,Kalam Valley,Khyber Pakhtunkhwa,Nature,9.4,May-Sep,35.485,72.585
+16,Lake Saif-ul-Malook,Khyber Pakhtunkhwa,Nature,9.7,Jun-Sep,34.877,73.693
+17,Kumrat Valley,Khyber Pakhtunkhwa,Nature,9.3,Jun-Sep,35.5333,72.2167
+18,Hanna Lake,Balochistan,Nature,8.0,Apr-Oct,30.2464,67.1008
+19,Hammerhead Gwadar,Balochistan,Nature,8.6,Nov-Mar,25.1114,62.3361
+20,Quaid-e-Azam Residency,Balochistan,Historical,8.8,May-Sep,30.4811,67.7258
+21,Hingol National Park,Balochistan,Nature,8.5,Nov-Feb,25.6833,65.5167
+22,Baltit Fort,Gilgit-Baltistan,Historical,9.0,May-Oct,36.3314,74.6719
+23,Attabad Lake,Gilgit-Baltistan,Nature,9.2,May-Sep,36.3333,74.8667
+24,Deosai Plains,Gilgit-Baltistan,Nature,9.6,Jul-Sep,34.9333,75.45
+25,Shangrila Resort,Gilgit-Baltistan,Nature,9.3,May-Sep,35.3414,75.5164
+26,Arang Kel,Azad Kashmir,Nature,9.5,May-Sep,34.8214,74.3528
+27,Banjosa Lake,Azad Kashmir,Nature,8.4,Apr-Oct,33.8117,73.8139
+28,Noor Mahal,Punjab,Historical,8.7,Oct-Mar,29.3872,71.6914
+29,Derawar Fort,Punjab,Historical,8.9,Nov-Feb,28.7672,71.3342
+30,Mohenjo-Daro,Sindh,Historical,9.1,Nov-Feb,27.3292,68.1389
+31,Gorakh Hill,Sindh,Nature,8.2,Oct-Mar,26.5167,67.15
+32,Khewra Salt Mine,Punjab,Adventure,8.5,All Year,32.6475,73.0083
+33,Rohtas Fort,Punjab,Historical,8.8,Oct-Mar,32.9642,73.5786
+34,Taxila Museum,Punjab,Historical,8.4,Oct-Mar,33.7461,72.8183
+35,Katas Raj Temples,Punjab,Historical,8.2,Oct-Mar,32.7411,72.9158
+36,Murree Mall Road,Punjab,City,8.6,All Year,33.907,73.3941
+37,Patriata Chairlift,Punjab,Adventure,8.3,All Year,33.8617,73.4475
+38,Khanpur Dam,Khyber Pakhtunkhwa,Adventure,8.7,Mar-Oct,33.8058,72.9342
+39,Thandiani,Khyber Pakhtunkhwa,Nature,8.9,May-Aug,34.25,73.3667
+40,Nathia Gali,Khyber Pakhtunkhwa,Nature,9.0,May-Aug,34.0667,73.3833
+41,Shogran,Khyber Pakhtunkhwa,Nature,9.1,May-Aug,34.6333,73.45
+42,Siri Paye Meadows,Khyber Pakhtunkhwa,Nature,9.2,Jun-Aug,34.6,73.4667
+43,Babusar Top,Khyber Pakhtunkhwa,Nature,9.4,Jul-Sep,35.15,74.05
+44,Lulusar Lake,Khyber Pakhtunkhwa,Nature,9.3,Jun-Sep,35.0833,73.9333
+45,Ansoo Lake,Khyber Pakhtunkhwa,Adventure,9.5,Jul-Aug,34.8167,73.6833
+46,Rakaposhi View Point,Gilgit-Baltistan,Nature,9.1,May-Oct,36.1983,74.3756
+47,Passu Cones,Gilgit-Baltistan,Nature,9.3,May-Oct,36.4719,74.8917
+48,Khunjerab Pass,Gilgit-Baltistan,Adventure,9.7,May-Sep,36.85,75.4333
+49,Satpara Lake,Gilgit-Baltistan,Nature,9.0,May-Sep,35.2167,75.6167
+50,Upper Kachura Lake,Gilgit-Baltistan,Nature,9.4,May-Sep,35.4333,75.4333
+51,Skardu Fort,Gilgit-Baltistan,Historical,8.6,May-Oct,35.3,75.6333
+52,Basho Valley,Gilgit-Baltistan,Nature,9.5,Jun-Sep,35.4167,75.25
+53,Naltar Valley,Gilgit-Baltistan,Nature,9.6,May-Sep,36.1333,74.1833
+54,Khaplu Palace,Gilgit-Baltistan,Historical,9.2,May-Oct,35.1611,76.3314
+55,Manthoka Waterfall,Gilgit-Baltistan,Nature,9.1,May-Sep,35.15,76.1333
+56,Peer Sohawa,Islamabad,Nature,8.8,All Year,33.7667,73.0833
+57,Rawal Lake,Islamabad,Nature,8.2,All Year,33.7,73.1167
+58,Pakistan Monument,Islamabad,Historical,9.0,All Year,33.6933,73.0683
+59,Lok Virsa Museum,Islamabad,Historical,8.4,All Year,33.6917,73.0694
+60,Saidpur Village,Islamabad,Historical,8.5,All Year,33.7431,73.0694
+61,Empress Market,Sindh,City,7.8,All Year,24.8622,67.0294
+62,Port Grand,Sindh,City,8.4,All Year,24.8483,66.9767
+63,Clifton Beach,Sindh,Beach,8.1,All Year,24.8131,67.0306
+64,Frere Hall,Sindh,Historical,8.3,All Year,24.8472,67.0331
+65,Kot Diji Fort,Sindh,Historical,8.5,Nov-Feb,27.3411,68.7056
+66,Ranikot Fort,Sindh,Historical,8.9,Nov-Feb,25.8814,67.9008
+67,Makli Necropolis,Sindh,Historical,9.0,Nov-Feb,24.7508,67.8967
+68,Shah Jahan Mosque Thatta,Sindh,Historical,9.2,Nov-Feb,24.7472,67.9222
+69,Kenjhar Lake,Sindh,Nature,8.0,Oct-Mar,24.9333,68.05
+70,Manchar Lake,Sindh,Nature,7.5,Oct-Mar,26.4167,67.65
+71,Karachi Safari Park,Sindh,Nature,7.2,All Year,24.9167,67.1167
+72,PAF Museum Karachi,Sindh,Historical,8.5,All Year,24.8767,67.0983
+73,Maritime Museum Karachi,Sindh,Historical,8.4,All Year,24.8761,67.0903
+74,Wazir Khan Mosque,Punjab,Historical,9.4,Oct-Mar,31.5833,74.3233
+75,Anarkali Bazaar,Punjab,City,8.8,All Year,31.5714,74.3108
+76,Liberty Market Lahore,Punjab,City,8.5,All Year,31.5117,74.3483
+77,Data Darbar,Punjab,Historical,9.1,All Year,31.5794,74.3039
+78,Hiran Minar,Punjab,Historical,8.2,Oct-Mar,31.7456,73.9878
+79,Harappa,Punjab,Historical,8.6,Oct-Mar,30.6333,72.8667
+80,Multan Fort,Punjab,Historical,8.0,Oct-Mar,30.2014,71.4789
+81,Chenab River Bank,Punjab,Nature,7.8,All Year,31.4167,72.8333
+82,Head Punjnad,Punjab,Nature,8.0,All Year,29.35,71.0167
+83,Lal Suhanra National Park,Punjab,Nature,8.2,Oct-Mar,29.3333,71.9167
+84,Gulshan-e-Iqbal Park Faisalabad,Punjab,Nature,7.4,All Year,31.4333,73.0833
+85,Lyallpur Museum,Punjab,Historical,7.2,All Year,31.4167,73.0667
+86,Khyber Pass,Khyber Pakhtunkhwa,Historical,9.5,Oct-Apr,34.0167,71.1667
+87,Warsak Dam,Khyber Pakhtunkhwa,Adventure,8.0,All Year,34.1667,71.4167
+88,Tarbela Dam,Khyber Pakhtunkhwa,Adventure,8.2,All Year,34.0833,72.7
+89,Takht-i-Bahi,Khyber Pakhtunkhwa,Historical,9.3,Oct-Apr,34.3167,71.9167
+90,Butkara Stupa,Khyber Pakhtunkhwa,Historical,8.5,Oct-Apr,34.7711,72.3614
+91,Kund Park,Khyber Pakhtunkhwa,Nature,7.8,All Year,33.9167,72.2333
+92,Ayubia National Park,Khyber Pakhtunkhwa,Nature,8.7,May-Aug,34.0333,73.4
+93,Dunga Gali Pipeline Track,Khyber Pakhtunkhwa,Adventure,8.9,May-Aug,34.05,73.3833
+94,Miranjani Top,Khyber Pakhtunkhwa,Adventure,9.2,May-Aug,34.1167,73.4167
+95,Mushkpuri Top,Khyber Pakhtunkhwa,Adventure,9.3,May-Aug,34.1,73.4
+96,Ushu Forest,Khyber Pakhtunkhwa,Nature,9.4,May-Sep,35.5333,72.6333
+97,Mahodand Lake,Khyber Pakhtunkhwa,Nature,9.6,Jun-Sep,35.7167,72.65
+98,Gabina Jabba,Khyber Pakhtunkhwa,Nature,9.1,Jun-Sep,35.1333,72.4667
+99,Kundol Lake,Khyber Pakhtunkhwa,Nature,9.5,Jul-Sep,35.4333,72.6333
+100,Shandur Pass,Khyber Pakhtunkhwa,Adventure,9.8,Jul,36.0833,72.5333

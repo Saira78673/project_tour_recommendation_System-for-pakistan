@@ -1,0 +1,249 @@
+TransportID,DestinationID,Mode,CostPerKM,DurationHours,Company,Availability
+1,1,Car Rental,92.87,7.2,Express Travel,Seasonal
+2,1,Bus,34.2,4.7,Careem,Daily
+3,2,Car Rental,47.02,10.5,Air Blue,Weekly
+4,2,Bus,48.48,5.6,Uber,Seasonal
+5,3,Flight,36.31,5.6,Express Travel,Daily
+6,3,Bus,37.09,6.3,Hertz,Seasonal
+7,4,Train,78.8,5.2,Pakistan Railways,Daily
+8,4,Bus,33.42,2.3,Hertz,Daily
+9,4,Flight,80.79,11.3,Pakistan Railways,Seasonal
+10,5,Train,82.53,0.6,Uber,Seasonal
+11,5,Bus,56.35,6.7,Hertz,Daily
+12,6,Car Rental,37.7,11.0,Hertz,Weekly
+13,6,Flight,41.9,6.3,Express Travel,Daily
+14,7,Flight,84.6,4.5,Express Travel,Weekly
+15,7,Taxi,81.5,10.7,Uber,Seasonal
+16,8,Taxi,64.95,2.3,Hertz,Seasonal
+17,8,Car Rental,26.13,8.5,Hertz,Daily
+18,8,Bus,76.66,10.4,Hertz,Weekly
+19,9,Bus,17.52,0.7,Air Blue,Weekly
+20,9,Flight,89.35,1.9,Uber,Seasonal
+21,9,Taxi,30.01,6.5,Uber,Seasonal
+22,10,Bus,96.39,7.6,Hertz,Daily
+23,10,Taxi,47.42,5.4,Air Blue,Seasonal
+24,10,Car Rental,72.68,8.6,Express Travel,Daily
+25,11,Taxi,61.79,0.8,Hertz,Daily
+26,11,Car Rental,54.61,11.2,Pakistan Railways,Daily
+27,11,Bus,28.56,5.0,Express Travel,Seasonal
+28,12,Car Rental,79.88,7.5,Air Blue,Daily
+29,12,Taxi,70.59,5.2,Hertz,Daily
+30,13,Flight,75.11,6.7,Express Travel,Daily
+31,13,Car Rental,83.92,10.2,Air Blue,Seasonal
+32,14,Taxi,26.51,10.3,Hertz,Seasonal
+33,14,Car Rental,51.97,1.4,Careem,Daily
+34,14,Train,82.32,10.9,Pakistan Railways,Weekly
+35,15,Car Rental,97.13,1.3,Express Travel,Daily
+36,15,Train,16.67,4.8,Hertz,Weekly
+37,15,Bus,49.01,12.0,Air Blue,Weekly
+38,16,Bus,75.63,7.5,Careem,Seasonal
+39,16,Train,43.25,1.0,Air Blue,Seasonal
+40,17,Bus,53.56,0.6,Uber,Weekly
+41,17,Car Rental,79.55,6.8,Express Travel,Daily
+42,17,Taxi,62.53,9.5,Hertz,Weekly
+43,18,Car Rental,70.4,7.6,Hertz,Seasonal
+44,18,Flight,25.29,2.7,Uber,Weekly
+45,19,Car Rental,63.74,8.0,Uber,Weekly
+46,19,Taxi,62.09,7.8,Pakistan Railways,Weekly
+47,20,Bus,28.2,4.1,Hertz,Seasonal
+48,20,Taxi,87.54,10.5,Pakistan Railways,Seasonal
+49,21,Car Rental,44.45,10.0,Pakistan Railways,Weekly
+50,21,Flight,81.66,3.6,Careem,Daily
+51,22,Bus,30.25,6.6,Uber,Daily
+52,22,Taxi,72.52,3.0,Uber,Seasonal
+53,23,Car Rental,83.95,5.8,Careem,Weekly
+54,23,Taxi,72.91,4.7,Uber,Daily
+55,23,Bus,51.76,3.5,Hertz,Daily
+56,24,Taxi,13.51,8.2,Careem,Daily
+57,24,Train,90.81,10.7,Hertz,Seasonal
+58,24,Bus,99.65,10.0,Pakistan Railways,Seasonal
+59,25,Bus,84.4,10.9,Hertz,Seasonal
+60,25,Flight,82.12,8.3,Air Blue,Daily
+61,26,Bus,47.01,2.0,Uber,Seasonal
+62,26,Train,42.44,9.5,Air Blue,Weekly
+63,27,Train,11.42,0.7,Pakistan Railways,Daily
+64,27,Flight,78.61,0.9,Air Blue,Weekly
+65,28,Train,46.21,5.0,Uber,Daily
+66,28,Car Rental,67.45,8.9,Pakistan Railways,Weekly
+67,29,Train,93.54,11.2,Uber,Daily
+68,29,Taxi,66.98,5.9,Hertz,Weekly
+69,30,Flight,55.36,11.4,Hertz,Weekly
+70,30,Car Rental,42.62,10.4,Air Blue,Daily
+71,30,Taxi,66.85,1.1,Air Blue,Seasonal
+72,31,Car Rental,24.06,7.8,Uber,Daily
+73,31,Flight,26.14,8.6,Careem,Weekly
+74,32,Taxi,15.45,8.4,Express Travel,Seasonal
+75,32,Flight,25.43,5.7,Careem,Weekly
+76,33,Bus,89.35,7.2,Express Travel,Weekly
+77,33,Car Rental,67.83,1.4,Air Blue,Seasonal
+78,33,Train,14.68,0.9,Pakistan Railways,Weekly
+79,34,Bus,72.16,7.4,Hertz,Seasonal
+80,34,Train,89.75,2.8,Hertz,Seasonal
+81,35,Car Rental,29.46,8.4,Express Travel,Seasonal
+82,35,Train,86.26,1.2,Uber,Seasonal
+83,35,Taxi,49.19,5.1,Express Travel,Weekly
+84,36,Taxi,81.05,5.3,Pakistan Railways,Weekly
+85,36,Bus,52.75,1.1,Pakistan Railways,Seasonal
+86,36,Train,23.25,11.7,Careem,Daily
+87,37,Bus,28.65,7.8,Hertz,Weekly
+88,37,Train,11.85,10.0,Uber,Daily
+89,37,Flight,41.83,4.0,Uber,Daily
+90,38,Bus,16.88,11.8,Careem,Weekly
+91,38,Car Rental,84.64,8.6,Careem,Weekly
+92,38,Train,22.34,7.2,Careem,Seasonal
+93,39,Car Rental,49.76,11.8,Pakistan Railways,Daily
+94,39,Bus,74.37,3.7,Pakistan Railways,Daily
+95,39,Flight,27.17,4.5,Pakistan Railways,Seasonal
+96,40,Taxi,14.05,2.0,Hertz,Daily
+97,40,Car Rental,78.86,11.3,Pakistan Railways,Seasonal
+98,40,Train,57.05,5.9,Express Travel,Seasonal
+99,41,Bus,42.53,10.4,Pakistan Railways,Seasonal
+100,41,Car Rental,72.87,5.3,Careem,Daily
+101,41,Flight,90.09,9.9,Careem,Seasonal
+102,42,Car Rental,68.03,3.1,Express Travel,Daily
+103,42,Flight,69.55,2.1,Careem,Daily
+104,43,Train,46.59,10.9,Hertz,Weekly
+105,43,Bus,97.29,7.1,Express Travel,Weekly
+106,43,Car Rental,43.71,9.7,Air Blue,Seasonal
+107,44,Train,81.63,2.5,Express Travel,Seasonal
+108,44,Car Rental,29.85,3.0,Pakistan Railways,Seasonal
+109,44,Taxi,63.0,9.1,Hertz,Seasonal
+110,45,Car Rental,23.68,5.8,Hertz,Daily
+111,45,Flight,36.46,3.2,Air Blue,Daily
+112,45,Taxi,95.02,7.5,Air Blue,Weekly
+113,46,Train,51.97,9.2,Pakistan Railways,Weekly
+114,46,Taxi,48.7,7.4,Hertz,Weekly
+115,47,Car Rental,78.66,1.0,Express Travel,Seasonal
+116,47,Taxi,65.36,11.0,Pakistan Railways,Seasonal
+117,48,Car Rental,49.44,10.2,Express Travel,Seasonal
+118,48,Flight,77.84,3.0,Uber,Daily
+119,49,Taxi,72.61,7.5,Pakistan Railways,Weekly
+120,49,Train,15.0,7.0,Express Travel,Daily
+121,50,Car Rental,85.16,11.2,Careem,Weekly
+122,50,Flight,38.62,9.1,Air Blue,Weekly
+123,50,Taxi,17.88,3.8,Air Blue,Seasonal
+124,51,Taxi,70.11,11.2,Uber,Seasonal
+125,51,Train,65.03,8.3,Careem,Weekly
+126,51,Flight,65.77,7.4,Uber,Weekly
+127,52,Taxi,10.93,8.7,Express Travel,Seasonal
+128,52,Car Rental,49.21,9.6,Uber,Seasonal
+129,52,Train,22.8,4.1,Uber,Daily
+130,53,Car Rental,98.64,11.3,Pakistan Railways,Weekly
+131,53,Flight,15.56,1.6,Uber,Seasonal
+132,53,Bus,23.54,11.6,Express Travel,Seasonal
+133,54,Bus,69.57,9.1,Pakistan Railways,Seasonal
+134,54,Car Rental,91.39,9.9,Pakistan Railways,Seasonal
+135,54,Taxi,15.0,0.6,Uber,Daily
+136,55,Bus,87.05,4.6,Uber,Seasonal
+137,55,Car Rental,36.56,3.9,Express Travel,Weekly
+138,56,Bus,64.34,10.4,Uber,Weekly
+139,56,Taxi,25.6,6.1,Uber,Weekly
+140,57,Bus,76.05,7.8,Express Travel,Weekly
+141,57,Flight,59.2,10.9,Uber,Seasonal
+142,58,Car Rental,83.89,7.0,Air Blue,Weekly
+143,58,Bus,60.45,11.3,Air Blue,Daily
+144,59,Taxi,51.76,1.9,Hertz,Weekly
+145,59,Flight,29.32,1.3,Pakistan Railways,Daily
+146,59,Bus,72.97,7.6,Air Blue,Seasonal
+147,60,Bus,94.45,9.9,Pakistan Railways,Weekly
+148,60,Train,33.37,11.7,Hertz,Seasonal
+149,60,Taxi,22.99,1.8,Express Travel,Daily
+150,61,Train,22.41,8.4,Pakistan Railways,Daily
+151,61,Taxi,77.07,1.4,Air Blue,Daily
+152,62,Taxi,24.04,10.1,Careem,Daily
+153,62,Flight,85.68,3.0,Hertz,Seasonal
+154,62,Train,84.13,4.9,Express Travel,Seasonal
+155,63,Car Rental,94.04,8.4,Express Travel,Weekly
+156,63,Bus,12.94,6.0,Uber,Weekly
+157,64,Bus,39.89,11.2,Careem,Daily
+158,64,Car Rental,30.16,3.3,Air Blue,Seasonal
+159,64,Train,94.46,8.1,Express Travel,Seasonal
+160,65,Bus,94.62,1.0,Hertz,Daily
+161,65,Train,43.61,3.4,Express Travel,Seasonal
+162,66,Car Rental,58.4,3.7,Careem,Seasonal
+163,66,Flight,12.62,10.9,Uber,Daily
+164,66,Train,29.81,6.5,Pakistan Railways,Seasonal
+165,67,Train,29.84,10.7,Uber,Seasonal
+166,67,Taxi,44.17,4.1,Air Blue,Weekly
+167,68,Taxi,48.56,8.9,Air Blue,Weekly
+168,68,Flight,23.18,10.1,Careem,Weekly
+169,68,Bus,31.34,1.7,Hertz,Seasonal
+170,69,Bus,59.27,3.7,Pakistan Railways,Weekly
+171,69,Taxi,39.27,1.0,Air Blue,Weekly
+172,69,Flight,10.57,11.8,Uber,Seasonal
+173,70,Train,87.15,9.9,Air Blue,Weekly
+174,70,Taxi,21.92,4.9,Air Blue,Daily
+175,70,Flight,99.13,0.8,Uber,Seasonal
+176,71,Taxi,94.47,2.6,Air Blue,Daily
+177,71,Flight,30.04,4.0,Careem,Daily
+178,71,Car Rental,24.42,2.5,Express Travel,Weekly
+179,72,Taxi,40.65,9.8,Express Travel,Weekly
+180,72,Flight,24.37,4.4,Pakistan Railways,Seasonal
+181,72,Car Rental,31.15,10.0,Careem,Daily
+182,73,Car Rental,34.99,0.9,Pakistan Railways,Weekly
+183,73,Flight,29.23,5.3,Air Blue,Weekly
+184,74,Bus,11.02,9.6,Pakistan Railways,Daily
+185,74,Taxi,60.96,0.6,Pakistan Railways,Seasonal
+186,75,Bus,91.38,4.8,Careem,Seasonal
+187,75,Train,14.55,5.4,Careem,Seasonal
+188,76,Flight,93.74,1.6,Uber,Weekly
+189,76,Train,40.37,10.5,Careem,Seasonal
+190,77,Taxi,54.33,5.6,Air Blue,Seasonal
+191,77,Car Rental,45.51,6.6,Air Blue,Daily
+192,77,Bus,61.48,9.8,Air Blue,Seasonal
+193,78,Flight,41.19,5.2,Pakistan Railways,Daily
+194,78,Train,84.46,7.2,Air Blue,Seasonal
+195,78,Bus,82.26,3.3,Careem,Daily
+196,79,Bus,20.99,1.8,Careem,Weekly
+197,79,Train,88.76,9.6,Uber,Daily
+198,79,Flight,59.1,1.7,Hertz,Seasonal
+199,80,Taxi,13.14,11.9,Hertz,Weekly
+200,80,Car Rental,50.01,6.3,Uber,Seasonal
+201,80,Train,25.22,4.5,Air Blue,Daily
+202,81,Train,52.09,7.6,Uber,Weekly
+203,81,Bus,48.47,4.3,Express Travel,Weekly
+204,82,Bus,84.09,6.9,Uber,Seasonal
+205,82,Train,11.46,9.9,Express Travel,Daily
+206,83,Train,28.93,9.3,Pakistan Railways,Weekly
+207,83,Flight,87.9,1.7,Pakistan Railways,Seasonal
+208,84,Car Rental,22.16,2.2,Air Blue,Daily
+209,84,Bus,94.95,9.3,Pakistan Railways,Weekly
+210,84,Taxi,48.62,3.7,Express Travel,Daily
+211,85,Car Rental,69.5,8.0,Hertz,Weekly
+212,85,Flight,21.79,7.5,Uber,Weekly
+213,85,Bus,14.05,8.9,Pakistan Railways,Weekly
+214,86,Flight,12.51,7.7,Express Travel,Weekly
+215,86,Car Rental,85.78,6.1,Pakistan Railways,Daily
+216,87,Flight,67.01,9.8,Pakistan Railways,Daily
+217,87,Bus,82.54,7.3,Uber,Daily
+218,88,Bus,85.58,2.0,Pakistan Railways,Weekly
+219,88,Flight,46.59,2.1,Uber,Daily
+220,89,Flight,70.87,8.3,Pakistan Railways,Weekly
+221,89,Train,36.62,0.5,Air Blue,Seasonal
+222,89,Bus,93.19,4.2,Air Blue,Weekly
+223,90,Train,85.35,2.0,Careem,Seasonal
+224,90,Flight,18.5,10.1,Uber,Weekly
+225,91,Bus,35.94,3.9,Air Blue,Daily
+226,91,Train,11.23,4.2,Uber,Seasonal
+227,92,Train,56.3,1.5,Express Travel,Seasonal
+228,92,Bus,44.2,7.5,Uber,Seasonal
+229,92,Taxi,31.63,1.6,Uber,Seasonal
+230,93,Bus,49.97,6.6,Pakistan Railways,Seasonal
+231,93,Train,90.22,5.8,Pakistan Railways,Daily
+232,93,Taxi,37.52,5.1,Hertz,Weekly
+233,94,Train,66.92,2.0,Air Blue,Daily
+234,94,Bus,33.11,9.7,Air Blue,Weekly
+235,94,Flight,99.52,1.6,Air Blue,Daily
+236,95,Car Rental,49.87,7.6,Careem,Seasonal
+237,95,Flight,27.66,1.9,Pakistan Railways,Weekly
+238,96,Taxi,35.01,9.4,Air Blue,Seasonal
+239,96,Bus,97.79,6.0,Careem,Seasonal
+240,96,Car Rental,67.4,9.9,Careem,Weekly
+241,97,Bus,63.87,8.0,Uber,Daily
+242,97,Car Rental,97.93,6.8,Uber,Weekly
+243,98,Taxi,27.09,8.6,Careem,Seasonal
+244,98,Train,94.74,6.6,Hertz,Daily
+245,99,Taxi,39.82,8.3,Air Blue,Daily
+246,99,Flight,70.85,4.0,Uber,Weekly
+247,100,Bus,62.18,4.5,Express Travel,Weekly
+248,100,Taxi,52.01,1.4,Careem,Weekly

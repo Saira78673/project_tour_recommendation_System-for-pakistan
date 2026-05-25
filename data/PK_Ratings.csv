@@ -1,0 +1,756 @@
+RatingID,UserID,DestinationID,Rating,ReviewText,Sentiment,HelpfulCount,CreationDate
+1,449,76,2,Peaceful location,Negative,52,2026-02-20
+2,180,8,3,Average place,Positive,66,2025-11-16
+3,180,12,4,Disappointing,Neutral,18,2025-12-22
+4,259,78,4,Average place,Negative,33,2026-03-10
+5,259,18,2,Great destination!,Negative,83,2026-04-01
+6,614,3,5,Average place,Negative,9,2026-03-03
+7,614,22,4,Incredible views,Positive,39,2026-01-10
+8,54,97,3,Must visit!,Positive,95,2026-02-12
+9,395,13,5,Incredible views,Negative,25,2026-01-15
+10,395,23,4,Peaceful location,Positive,18,2026-02-04
+11,462,50,4,Must visit!,Positive,94,2025-11-20
+12,198,70,4,Not as expected,Negative,95,2026-02-18
+13,123,67,5,Must visit!,Negative,31,2026-03-19
+14,123,31,3,Must visit!,Neutral,95,2026-02-10
+15,210,48,3,Must visit!,Neutral,68,2026-02-27
+16,709,72,1,Great destination!,Positive,40,2025-11-15
+17,36,24,2,Must visit!,Neutral,56,2026-02-23
+18,36,53,4,Not as expected,Negative,75,2026-04-13
+19,638,10,2,Disappointing,Negative,19,2026-04-23
+20,446,85,1,Average place,Neutral,4,2026-03-10
+21,446,58,5,Peaceful location,Neutral,16,2026-03-07
+22,67,16,3,Must visit!,Neutral,41,2025-12-20
+23,464,3,4,Peaceful location,Negative,58,2025-12-25
+24,488,52,3,Not as expected,Positive,95,2025-12-06
+25,640,11,1,Worth every penny,Neutral,88,2026-05-04
+26,172,29,3,Incredible views,Negative,12,2025-12-20
+27,494,95,1,Must visit!,Positive,49,2026-04-29
+28,810,7,3,Disappointing,Positive,5,2025-12-07
+29,810,89,5,Peaceful location,Neutral,63,2026-02-06
+30,713,96,1,Average place,Negative,36,2026-01-31
+31,713,97,4,Not as expected,Neutral,21,2026-01-26
+32,209,98,1,Not as expected,Negative,1,2026-03-29
+33,283,61,4,Amazing experience!,Positive,20,2026-01-06
+34,283,92,3,Amazing experience!,Negative,46,2026-01-24
+35,43,33,4,Great destination!,Neutral,50,2025-11-26
+36,43,22,2,Not as expected,Negative,5,2025-11-24
+37,852,30,5,Not as expected,Negative,50,2025-12-08
+38,852,47,3,Amazing experience!,Positive,21,2026-02-08
+39,68,91,3,Incredible views,Negative,38,2026-01-12
+40,68,72,4,Peaceful location,Neutral,14,2025-12-20
+41,3,74,5,Must visit!,Negative,40,2026-04-12
+42,16,16,1,Great destination!,Positive,74,2025-11-15
+43,237,32,5,Incredible views,Neutral,90,2026-03-04
+44,216,54,4,Must visit!,Neutral,49,2026-04-13
+45,216,73,4,Average place,Neutral,28,2025-12-25
+46,294,96,3,Incredible views,Negative,17,2026-05-10
+47,294,63,4,Average place,Neutral,93,2026-03-01
+48,808,70,1,Amazing experience!,Negative,53,2025-12-23
+49,808,42,4,Incredible views,Neutral,79,2026-03-07
+50,457,20,5,Peaceful location,Negative,17,2026-04-20
+51,457,1,3,Must visit!,Neutral,4,2026-04-25
+52,82,74,5,Must visit!,Positive,23,2025-12-23
+53,82,21,2,Incredible views,Neutral,18,2025-12-08
+54,270,91,2,Amazing experience!,Negative,83,2026-02-26
+55,270,57,4,Great destination!,Positive,64,2025-12-14
+56,42,51,3,Worth every penny,Negative,35,2025-11-28
+57,42,66,3,Not as expected,Positive,36,2026-03-11
+58,911,51,3,Must visit!,Negative,64,2026-03-12
+59,887,63,2,Disappointing,Negative,50,2026-01-26
+60,887,38,4,Great destination!,Negative,76,2026-02-02
+61,702,48,4,Average place,Negative,71,2026-01-16
+62,690,2,3,Peaceful location,Positive,54,2025-12-30
+63,858,94,4,Amazing experience!,Neutral,9,2025-12-12
+64,478,97,5,Incredible views,Neutral,99,2026-01-24
+65,478,6,2,Worth every penny,Negative,23,2025-12-17
+66,224,98,1,Great destination!,Positive,85,2026-03-14
+67,224,23,5,Incredible views,Negative,74,2026-04-04
+68,418,59,2,Worth every penny,Neutral,4,2025-11-24
+69,6,92,5,Great destination!,Negative,22,2025-11-25
+70,559,47,3,Peaceful location,Negative,39,2025-12-08
+71,559,68,3,Disappointing,Negative,23,2025-12-08
+72,566,18,1,Not as expected,Neutral,2,2026-02-25
+73,326,92,3,Amazing experience!,Negative,99,2026-01-15
+74,326,11,3,Peaceful location,Neutral,64,2026-05-03
+75,351,71,5,Disappointing,Neutral,64,2026-02-10
+76,894,13,1,Disappointing,Negative,57,2025-12-11
+77,263,85,1,Worth every penny,Positive,56,2026-02-04
+78,263,62,3,Incredible views,Negative,62,2026-02-20
+79,481,72,1,Great destination!,Positive,1,2025-12-09
+80,55,63,4,Not as expected,Positive,21,2026-02-28
+81,55,24,3,Amazing experience!,Neutral,22,2025-12-18
+82,497,22,4,Not as expected,Negative,89,2026-04-19
+83,211,41,5,Incredible views,Neutral,78,2026-03-02
+84,463,52,1,Must visit!,Positive,8,2026-01-17
+85,463,26,2,Must visit!,Negative,82,2026-02-04
+86,170,79,2,Disappointing,Neutral,35,2026-03-28
+87,170,6,4,Peaceful location,Neutral,78,2026-02-13
+88,436,78,3,Great destination!,Neutral,77,2025-11-27
+89,252,55,3,Great destination!,Neutral,78,2026-04-13
+90,869,81,5,Amazing experience!,Positive,20,2026-01-22
+91,869,78,2,Incredible views,Negative,38,2026-02-24
+92,74,86,4,Worth every penny,Negative,72,2026-02-15
+93,461,88,3,Not as expected,Negative,72,2026-03-10
+94,597,71,4,Incredible views,Positive,21,2025-11-23
+95,597,71,4,Disappointing,Negative,46,2026-04-10
+96,157,75,5,Peaceful location,Negative,12,2026-03-24
+97,73,57,2,Peaceful location,Neutral,95,2026-02-15
+98,73,88,1,Peaceful location,Negative,66,2026-01-08
+99,368,7,2,Must visit!,Positive,14,2026-01-20
+100,108,86,2,Amazing experience!,Negative,8,2026-03-10
+101,108,57,3,Peaceful location,Neutral,48,2026-01-31
+102,945,21,5,Great destination!,Negative,95,2026-05-07
+103,755,32,4,Peaceful location,Neutral,92,2025-12-17
+104,595,55,1,Average place,Neutral,47,2026-01-19
+105,359,39,5,Must visit!,Positive,63,2026-04-17
+106,723,1,3,Great destination!,Positive,34,2026-02-25
+107,225,98,2,Must visit!,Positive,75,2026-04-10
+108,535,69,3,Disappointing,Neutral,14,2026-03-28
+109,535,48,4,Must visit!,Positive,39,2026-01-12
+110,659,20,5,Worth every penny,Positive,14,2026-03-13
+111,155,14,5,Amazing experience!,Neutral,40,2025-12-05
+112,547,90,2,Worth every penny,Negative,58,2026-01-16
+113,547,49,1,Worth every penny,Negative,61,2026-03-20
+114,320,51,4,Amazing experience!,Positive,65,2025-12-01
+115,320,77,1,Must visit!,Positive,92,2026-03-23
+116,827,39,2,Amazing experience!,Positive,80,2026-05-01
+117,827,2,1,Worth every penny,Positive,99,2026-01-15
+118,800,99,1,Incredible views,Neutral,55,2025-12-15
+119,715,40,3,Disappointing,Positive,3,2026-04-17
+120,375,60,1,Peaceful location,Negative,60,2026-05-12
+121,820,30,4,Amazing experience!,Negative,23,2026-02-16
+122,820,69,1,Average place,Negative,57,2025-12-14
+123,951,44,5,Great destination!,Positive,56,2025-11-26
+124,473,17,4,Average place,Negative,49,2026-02-20
+125,473,92,2,Peaceful location,Positive,43,2025-12-18
+126,69,50,5,Peaceful location,Neutral,48,2026-02-04
+127,69,94,5,Disappointing,Negative,24,2026-03-18
+128,714,64,4,Incredible views,Positive,65,2026-05-09
+129,402,12,1,Peaceful location,Negative,22,2026-01-12
+130,402,9,1,Not as expected,Neutral,99,2025-12-26
+131,612,89,4,Great destination!,Negative,50,2025-12-17
+132,621,13,1,Average place,Negative,77,2025-11-28
+133,621,27,2,Disappointing,Positive,26,2026-05-06
+134,371,92,2,Great destination!,Positive,71,2026-02-11
+135,148,14,1,Disappointing,Neutral,27,2026-04-20
+136,148,12,3,Disappointing,Neutral,25,2026-03-16
+137,350,15,4,Disappointing,Negative,1,2025-12-05
+138,33,35,1,Peaceful location,Neutral,1,2026-01-29
+139,33,59,3,Amazing experience!,Neutral,20,2026-04-21
+140,187,97,4,Incredible views,Positive,78,2025-12-15
+141,782,2,2,Average place,Neutral,2,2025-12-11
+142,782,77,1,Worth every penny,Neutral,68,2026-01-24
+143,229,41,3,Average place,Positive,36,2025-11-27
+144,229,77,5,Disappointing,Negative,7,2026-03-31
+145,999,41,4,Average place,Negative,20,2025-12-26
+146,999,46,1,Disappointing,Positive,43,2026-02-02
+147,173,94,4,Worth every penny,Positive,38,2025-11-28
+148,616,14,2,Average place,Positive,60,2026-05-10
+149,616,50,5,Average place,Negative,13,2026-02-13
+150,117,67,4,Incredible views,Neutral,24,2026-01-15
+151,15,64,1,Great destination!,Neutral,3,2025-12-19
+152,15,47,1,Worth every penny,Neutral,2,2025-12-24
+153,206,17,2,Average place,Positive,50,2026-01-15
+154,302,78,1,Worth every penny,Positive,79,2025-12-15
+155,448,99,4,Worth every penny,Positive,89,2025-11-20
+156,448,7,2,Worth every penny,Positive,20,2026-01-17
+157,602,59,4,Great destination!,Positive,82,2026-03-07
+158,602,55,2,Peaceful location,Positive,21,2026-05-05
+159,815,12,3,Must visit!,Neutral,98,2025-12-28
+160,479,8,4,Incredible views,Positive,85,2026-04-17
+161,479,81,5,Peaceful location,Neutral,17,2026-03-05
+162,204,2,2,Incredible views,Negative,89,2026-03-20
+163,204,15,2,Amazing experience!,Negative,66,2025-11-18
+164,431,81,1,Average place,Negative,16,2026-05-11
+165,431,33,5,Disappointing,Negative,99,2026-02-14
+166,994,5,2,Not as expected,Negative,90,2025-12-12
+167,532,67,5,Disappointing,Neutral,38,2026-05-10
+168,656,42,1,Worth every penny,Positive,58,2026-03-11
+169,656,80,3,Worth every penny,Neutral,74,2026-03-17
+170,846,95,5,Amazing experience!,Negative,0,2026-02-10
+171,534,67,1,Incredible views,Neutral,25,2026-03-13
+172,101,17,1,Not as expected,Positive,62,2025-12-30
+173,101,59,3,Must visit!,Positive,44,2025-11-21
+174,177,35,4,Great destination!,Positive,41,2026-02-25
+175,39,98,5,Amazing experience!,Neutral,47,2026-01-11
+176,156,34,2,Not as expected,Negative,24,2025-12-24
+177,156,31,3,Disappointing,Neutral,80,2026-02-27
+178,475,34,4,Must visit!,Positive,57,2026-01-20
+179,653,60,2,Not as expected,Positive,83,2026-03-03
+180,653,23,1,Incredible views,Negative,44,2026-03-11
+181,707,95,3,Average place,Positive,66,2025-11-15
+182,707,89,5,Amazing experience!,Positive,25,2026-04-21
+183,352,59,3,Incredible views,Positive,54,2026-04-17
+184,200,27,2,Must visit!,Neutral,95,2026-01-08
+185,200,26,2,Incredible views,Positive,44,2025-12-23
+186,369,35,2,Not as expected,Positive,67,2025-11-24
+187,369,4,4,Peaceful location,Neutral,74,2026-03-08
+188,991,82,4,Amazing experience!,Negative,16,2025-11-30
+189,991,93,1,Worth every penny,Negative,43,2026-01-26
+190,996,22,2,Disappointing,Negative,71,2026-02-08
+191,236,29,5,Amazing experience!,Negative,80,2026-01-03
+192,236,59,2,Disappointing,Positive,1,2026-05-08
+193,201,24,2,Disappointing,Negative,23,2026-04-17
+194,756,8,4,Incredible views,Negative,60,2026-03-12
+195,38,92,3,Average place,Positive,40,2025-12-22
+196,861,74,2,Incredible views,Neutral,99,2026-02-11
+197,861,11,2,Amazing experience!,Positive,9,2026-05-06
+198,412,12,5,Not as expected,Negative,35,2026-05-06
+199,49,34,1,Amazing experience!,Positive,16,2025-11-30
+200,49,73,5,Great destination!,Neutral,91,2026-01-16
+201,298,42,1,Incredible views,Negative,74,2026-03-03
+202,79,88,3,Must visit!,Positive,73,2025-11-18
+203,969,72,1,Great destination!,Positive,41,2026-02-28
+204,969,9,2,Great destination!,Positive,42,2026-03-31
+205,192,89,3,Must visit!,Positive,86,2026-01-04
+206,348,63,4,Disappointing,Neutral,60,2025-11-26
+207,348,95,5,Must visit!,Positive,10,2025-12-25
+208,346,69,3,Incredible views,Neutral,71,2026-03-21
+209,456,21,3,Amazing experience!,Positive,23,2026-01-08
+210,363,6,5,Not as expected,Neutral,34,2026-01-05
+211,363,79,3,Great destination!,Positive,71,2026-03-31
+212,484,5,2,Not as expected,Neutral,86,2026-02-22
+213,486,49,4,Not as expected,Positive,66,2026-03-11
+214,486,80,4,Great destination!,Positive,32,2026-04-21
+215,655,31,3,Amazing experience!,Neutral,25,2026-03-23
+216,944,30,3,Worth every penny,Positive,86,2026-04-17
+217,944,73,5,Amazing experience!,Negative,48,2026-01-22
+218,825,55,5,Must visit!,Positive,13,2026-02-11
+219,825,20,1,Average place,Neutral,23,2026-02-26
+220,741,99,3,Must visit!,Neutral,63,2026-01-16
+221,741,17,3,Great destination!,Negative,90,2026-02-21
+222,761,38,5,Great destination!,Negative,31,2026-01-26
+223,907,57,3,Disappointing,Neutral,15,2026-01-27
+224,907,76,5,Peaceful location,Negative,31,2025-12-13
+225,809,62,5,Disappointing,Positive,78,2026-03-08
+226,87,80,2,Great destination!,Neutral,76,2026-03-14
+227,952,71,1,Worth every penny,Negative,7,2026-02-09
+228,952,37,3,Not as expected,Negative,87,2026-03-29
+229,728,26,3,Amazing experience!,Negative,86,2026-04-18
+230,728,68,4,Not as expected,Negative,58,2025-11-14
+231,643,43,5,Peaceful location,Positive,2,2026-03-03
+232,643,12,1,Not as expected,Neutral,45,2025-11-17
+233,52,25,1,Must visit!,Negative,29,2026-02-09
+234,80,78,5,Incredible views,Positive,70,2026-01-04
+235,80,60,2,Incredible views,Negative,17,2026-03-31
+236,76,78,1,Peaceful location,Negative,58,2026-03-01
+237,76,24,4,Great destination!,Negative,39,2026-03-03
+238,708,60,1,Great destination!,Neutral,84,2026-03-13
+239,816,27,1,Incredible views,Positive,20,2025-12-28
+240,962,97,2,Average place,Negative,58,2026-02-20
+241,646,30,1,Worth every penny,Positive,98,2026-01-27
+242,646,56,2,Great destination!,Neutral,76,2026-03-21
+243,674,41,5,Incredible views,Negative,65,2026-05-11
+244,674,69,4,Incredible views,Negative,56,2026-04-08
+245,153,1,1,Amazing experience!,Neutral,14,2025-12-06
+246,153,21,1,Great destination!,Positive,63,2025-11-24
+247,109,53,1,Disappointing,Neutral,9,2026-02-12
+248,329,90,3,Must visit!,Positive,3,2026-02-13
+249,329,8,4,Disappointing,Positive,24,2025-12-09
+250,753,73,2,Amazing experience!,Negative,48,2026-05-08
+251,753,47,4,Peaceful location,Positive,94,2025-11-22
+252,775,96,3,Average place,Negative,5,2025-12-19
+253,775,82,3,Average place,Positive,94,2026-01-18
+254,271,11,2,Not as expected,Positive,91,2026-05-04
+255,441,8,1,Peaceful location,Negative,22,2026-04-20
+256,40,56,4,Disappointing,Neutral,22,2026-05-04
+257,40,4,2,Incredible views,Neutral,33,2026-01-12
+258,680,42,3,Must visit!,Neutral,89,2026-01-28
+259,680,95,3,Must visit!,Positive,11,2026-04-27
+260,332,17,2,Great destination!,Positive,64,2026-02-08
+261,332,96,2,Average place,Neutral,43,2026-02-06
+262,737,99,1,Must visit!,Positive,82,2025-11-30
+263,737,91,5,Peaceful location,Negative,82,2026-01-08
+264,239,11,1,Disappointing,Neutral,99,2026-01-11
+265,64,29,1,Amazing experience!,Negative,78,2026-05-02
+266,71,26,1,Amazing experience!,Negative,40,2025-12-13
+267,454,5,3,Great destination!,Positive,3,2026-03-17
+268,454,25,2,Disappointing,Neutral,13,2026-03-11
+269,389,75,1,Average place,Neutral,64,2026-01-08
+270,389,100,1,Peaceful location,Neutral,23,2026-02-09
+271,939,6,1,Incredible views,Negative,32,2025-12-22
+272,423,56,4,Peaceful location,Negative,43,2026-04-05
+273,689,43,2,Peaceful location,Positive,67,2026-02-17
+274,802,13,2,Must visit!,Positive,21,2026-03-08
+275,802,89,2,Not as expected,Positive,14,2026-02-27
+276,358,18,1,Disappointing,Positive,57,2026-01-21
+277,358,85,3,Average place,Negative,33,2026-04-13
+278,839,68,3,Average place,Neutral,2,2026-03-17
+279,839,37,1,Average place,Neutral,38,2026-01-24
+280,305,42,3,Disappointing,Neutral,37,2026-04-23
+281,305,26,4,Incredible views,Positive,13,2025-11-16
+282,401,25,3,Incredible views,Neutral,9,2026-04-29
+283,459,57,3,Incredible views,Neutral,30,2025-11-23
+284,835,35,5,Average place,Negative,93,2026-04-13
+285,835,94,5,Great destination!,Negative,73,2025-12-22
+286,575,87,4,Great destination!,Neutral,5,2026-02-01
+287,575,53,2,Incredible views,Negative,46,2026-02-25
+288,489,61,5,Average place,Neutral,59,2025-11-19
+289,627,33,4,Worth every penny,Negative,6,2026-04-17
+290,538,87,2,Must visit!,Negative,74,2025-11-15
+291,538,8,5,Worth every penny,Neutral,17,2026-03-19
+292,163,24,5,Great destination!,Neutral,52,2026-04-24
+293,58,57,2,Worth every penny,Neutral,48,2026-02-12
+294,642,22,4,Great destination!,Positive,43,2026-02-11
+295,642,35,5,Disappointing,Positive,88,2026-02-17
+296,549,64,3,Peaceful location,Neutral,79,2026-04-29
+297,549,70,3,Disappointing,Positive,78,2026-04-05
+298,913,53,2,Not as expected,Positive,98,2026-01-07
+299,913,52,3,Incredible views,Neutral,49,2026-02-08
+300,254,79,5,Must visit!,Positive,21,2026-05-11
+301,254,77,4,Disappointing,Neutral,50,2025-12-21
+302,699,99,4,Amazing experience!,Positive,21,2026-01-10
+303,699,54,4,Peaceful location,Positive,89,2025-11-20
+304,626,7,2,Peaceful location,Neutral,60,2026-01-31
+305,626,16,2,Peaceful location,Positive,17,2026-05-11
+306,832,18,1,Worth every penny,Negative,63,2026-02-10
+307,832,8,4,Average place,Negative,51,2025-12-28
+308,735,50,2,Must visit!,Neutral,67,2026-04-16
+309,735,77,5,Incredible views,Neutral,29,2026-02-07
+310,872,52,3,Worth every penny,Negative,80,2026-04-19
+311,872,20,3,Great destination!,Negative,0,2026-02-11
+312,126,6,4,Must visit!,Negative,34,2026-03-16
+313,721,61,5,Average place,Neutral,91,2026-03-18
+314,291,57,1,Must visit!,Neutral,52,2026-03-22
+315,357,26,1,Worth every penny,Positive,90,2025-11-18
+316,357,67,1,Amazing experience!,Negative,70,2026-03-03
+317,62,32,4,Peaceful location,Neutral,78,2026-03-04
+318,544,96,5,Disappointing,Negative,28,2026-02-19
+319,544,10,5,Amazing experience!,Positive,16,2026-04-21
+320,65,14,1,Average place,Neutral,0,2025-11-18
+321,65,8,4,Great destination!,Positive,36,2026-01-12
+322,823,84,5,Peaceful location,Negative,12,2026-03-05
+323,297,60,5,Disappointing,Positive,84,2026-01-04
+324,297,4,3,Great destination!,Negative,79,2026-01-24
+325,213,39,2,Not as expected,Negative,48,2026-02-16
+326,692,11,5,Great destination!,Negative,56,2025-12-07
+327,692,22,1,Worth every penny,Neutral,48,2026-01-24
+328,183,69,5,Disappointing,Positive,88,2026-01-11
+329,834,17,4,Worth every penny,Negative,65,2026-05-09
+330,834,20,1,Average place,Positive,5,2026-03-09
+331,785,50,3,Average place,Positive,2,2025-12-03
+332,541,15,5,Average place,Negative,70,2026-01-22
+333,905,62,3,Incredible views,Neutral,5,2026-04-10
+334,905,9,4,Great destination!,Positive,98,2026-01-16
+335,4,51,3,Peaceful location,Neutral,35,2025-12-23
+336,891,58,2,Not as expected,Neutral,42,2026-01-05
+337,685,56,3,Great destination!,Negative,82,2026-02-05
+338,685,51,3,Average place,Positive,71,2026-03-09
+339,411,49,4,Not as expected,Neutral,27,2026-04-10
+340,411,13,4,Not as expected,Neutral,51,2026-01-06
+341,688,76,1,Worth every penny,Positive,6,2026-04-07
+342,644,93,2,Peaceful location,Negative,70,2026-02-21
+343,355,33,2,Great destination!,Positive,4,2026-01-04
+344,578,98,3,Average place,Negative,50,2026-01-12
+345,591,15,4,Peaceful location,Positive,15,2025-12-30
+346,591,63,1,Not as expected,Negative,76,2025-11-22
+347,269,57,4,Worth every penny,Neutral,61,2025-12-18
+348,57,80,5,Average place,Negative,21,2026-01-08
+349,992,34,4,Great destination!,Negative,50,2026-03-24
+350,992,14,5,Not as expected,Negative,28,2025-11-27
+351,399,64,1,Must visit!,Negative,66,2026-02-19
+352,675,100,3,Incredible views,Positive,77,2026-03-03
+353,675,20,1,Disappointing,Positive,94,2026-02-23
+354,191,62,5,Amazing experience!,Positive,36,2026-04-24
+355,191,10,4,Great destination!,Positive,88,2026-04-06
+356,19,92,4,Incredible views,Positive,19,2026-03-31
+357,19,95,2,Worth every penny,Negative,67,2025-11-22
+358,246,73,2,Average place,Negative,95,2026-03-20
+359,805,85,2,Incredible views,Neutral,90,2026-01-22
+360,2,72,3,Must visit!,Positive,21,2025-12-01
+361,2,10,2,Not as expected,Neutral,21,2026-01-21
+362,736,83,4,Great destination!,Neutral,44,2025-12-16
+363,438,7,3,Disappointing,Positive,52,2025-12-02
+364,901,93,2,Average place,Positive,97,2025-11-26
+365,280,43,5,Must visit!,Negative,48,2026-01-27
+366,706,78,1,Worth every penny,Positive,78,2026-05-09
+367,168,89,3,Average place,Neutral,52,2026-04-04
+368,168,53,1,Disappointing,Negative,91,2025-12-26
+369,537,87,3,Amazing experience!,Positive,52,2025-11-20
+370,537,26,2,Great destination!,Neutral,26,2026-04-15
+371,568,31,3,Incredible views,Positive,6,2026-01-28
+372,568,57,3,Peaceful location,Positive,81,2026-04-14
+373,791,22,2,Must visit!,Negative,66,2026-01-08
+374,791,79,3,Great destination!,Neutral,17,2026-03-28
+375,287,63,3,Great destination!,Neutral,36,2026-04-25
+376,287,43,5,Great destination!,Negative,14,2026-01-11
+377,672,100,4,Not as expected,Negative,42,2026-04-10
+378,672,2,3,Peaceful location,Positive,34,2025-12-18
+379,542,21,4,Average place,Positive,19,2026-01-10
+380,542,4,4,Disappointing,Neutral,76,2025-11-14
+381,289,39,1,Worth every penny,Negative,93,2025-11-18
+382,289,98,5,Worth every penny,Positive,79,2026-03-05
+383,763,57,4,Amazing experience!,Neutral,34,2026-01-20
+384,61,79,3,Great destination!,Neutral,59,2026-03-30
+385,231,99,3,Incredible views,Neutral,21,2025-11-19
+386,231,55,3,Incredible views,Neutral,0,2025-12-15
+387,584,20,5,Amazing experience!,Negative,84,2026-03-09
+388,584,60,3,Peaceful location,Neutral,30,2026-02-17
+389,422,81,4,Peaceful location,Neutral,99,2026-01-10
+390,134,8,4,Disappointing,Negative,83,2025-12-08
+391,134,22,1,Peaceful location,Negative,61,2026-02-15
+392,971,39,1,Peaceful location,Positive,54,2026-03-03
+393,322,8,4,Disappointing,Positive,20,2026-05-09
+394,322,32,5,Must visit!,Positive,82,2026-03-02
+395,293,37,3,Disappointing,Positive,29,2025-11-14
+396,221,95,5,Amazing experience!,Negative,99,2026-03-26
+397,596,55,5,Disappointing,Negative,97,2025-12-06
+398,596,76,2,Great destination!,Neutral,51,2026-02-21
+399,746,42,5,Average place,Negative,28,2026-04-14
+400,262,19,1,Peaceful location,Neutral,6,2025-12-25
+401,824,66,3,Peaceful location,Positive,74,2026-04-03
+402,662,2,4,Worth every penny,Neutral,75,2026-01-19
+403,860,95,1,Great destination!,Positive,51,2026-04-09
+404,751,1,3,Average place,Negative,97,2026-02-26
+405,849,58,5,Great destination!,Positive,24,2025-12-24
+406,849,97,1,Amazing experience!,Neutral,86,2025-12-08
+407,178,38,4,Peaceful location,Positive,92,2025-12-23
+408,511,4,3,Disappointing,Neutral,10,2026-01-23
+409,511,62,3,Must visit!,Positive,39,2026-01-01
+410,377,16,2,Incredible views,Negative,71,2026-03-10
+411,111,6,5,Worth every penny,Neutral,60,2026-02-17
+412,111,53,4,Not as expected,Positive,57,2026-04-19
+413,590,99,1,Worth every penny,Neutral,67,2026-01-26
+414,752,46,2,Not as expected,Positive,20,2026-01-09
+415,645,80,1,Great destination!,Positive,92,2026-02-07
+416,60,12,4,Disappointing,Neutral,4,2026-03-20
+417,60,36,3,Average place,Neutral,7,2026-01-07
+418,641,7,4,Must visit!,Negative,46,2026-04-19
+419,641,80,4,Peaceful location,Positive,95,2026-02-13
+420,725,41,2,Amazing experience!,Neutral,2,2026-05-04
+421,725,52,2,Great destination!,Positive,93,2025-12-31
+422,942,32,5,Not as expected,Neutral,66,2025-12-20
+423,942,15,1,Peaceful location,Positive,3,2026-04-11
+424,670,56,3,Must visit!,Positive,29,2026-01-30
+425,360,49,1,Must visit!,Negative,80,2026-01-03
+426,360,59,5,Disappointing,Negative,21,2026-01-31
+427,29,97,3,Must visit!,Neutral,17,2026-01-24
+428,693,65,4,Amazing experience!,Positive,75,2025-12-25
+429,693,88,2,Great destination!,Positive,55,2025-12-14
+430,780,66,4,Peaceful location,Neutral,8,2026-02-27
+431,780,16,5,Average place,Positive,13,2026-02-09
+432,421,17,1,Average place,Positive,53,2026-01-07
+433,421,2,1,Incredible views,Neutral,0,2026-05-01
+434,777,78,2,Worth every penny,Neutral,17,2026-01-30
+435,23,94,1,Not as expected,Positive,47,2025-12-31
+436,502,8,3,Average place,Negative,83,2026-01-11
+437,502,93,1,Great destination!,Neutral,64,2026-03-27
+438,89,35,3,Average place,Negative,79,2025-12-30
+439,89,9,2,Disappointing,Neutral,36,2025-11-14
+440,214,38,2,Average place,Positive,23,2025-12-19
+441,214,95,4,Great destination!,Neutral,2,2026-05-05
+442,451,35,2,Not as expected,Positive,86,2025-12-03
+443,451,18,2,Disappointing,Neutral,92,2026-03-29
+444,648,15,5,Average place,Positive,66,2026-03-12
+445,380,44,4,Incredible views,Negative,0,2026-01-25
+446,380,67,1,Disappointing,Neutral,19,2025-12-27
+447,171,28,3,Peaceful location,Positive,1,2026-01-02
+448,594,81,3,Average place,Negative,93,2026-03-23
+449,594,78,3,Incredible views,Positive,83,2026-01-20
+450,900,24,2,Incredible views,Positive,21,2026-03-15
+451,465,11,2,Incredible views,Neutral,59,2026-03-12
+452,465,54,2,Incredible views,Positive,89,2026-01-21
+453,792,13,4,Must visit!,Neutral,91,2026-02-17
+454,792,75,4,Not as expected,Negative,9,2026-04-28
+455,136,45,5,Great destination!,Negative,29,2026-02-24
+456,783,30,3,Amazing experience!,Positive,63,2026-02-01
+457,842,48,1,Amazing experience!,Neutral,81,2026-05-10
+458,565,37,5,Amazing experience!,Neutral,99,2026-02-02
+459,565,85,5,Incredible views,Neutral,85,2026-03-11
+460,669,64,2,Not as expected,Positive,38,2026-04-09
+461,343,10,1,Not as expected,Negative,10,2026-04-01
+462,343,80,3,Average place,Negative,0,2026-05-02
+463,770,79,2,Peaceful location,Positive,86,2026-02-27
+464,628,80,4,Incredible views,Neutral,61,2026-01-27
+465,303,10,5,Worth every penny,Negative,91,2026-03-12
+466,303,89,3,Disappointing,Negative,23,2026-01-12
+467,922,43,2,Great destination!,Positive,45,2025-12-15
+468,339,10,2,Great destination!,Neutral,83,2025-11-25
+469,339,36,1,Not as expected,Neutral,45,2026-01-15
+470,407,23,4,Worth every penny,Negative,52,2026-01-13
+471,730,96,4,Amazing experience!,Negative,52,2026-03-25
+472,730,83,1,Must visit!,Negative,65,2025-12-14
+473,703,92,4,Great destination!,Negative,58,2025-12-08
+474,258,81,3,Amazing experience!,Negative,99,2026-04-15
+475,258,92,5,Average place,Positive,56,2026-05-04
+476,927,45,5,Great destination!,Neutral,33,2025-11-24
+477,300,69,3,Not as expected,Positive,38,2025-12-04
+478,668,66,1,Average place,Negative,0,2026-05-09
+479,636,47,1,Incredible views,Neutral,63,2025-12-31
+480,366,49,4,Must visit!,Negative,60,2026-02-23
+481,366,84,1,Not as expected,Positive,6,2025-11-15
+482,131,95,1,Great destination!,Negative,10,2025-12-03
+483,51,45,2,Peaceful location,Negative,92,2026-02-24
+484,51,34,5,Not as expected,Positive,72,2025-11-14
+485,924,94,3,Great destination!,Positive,69,2026-05-02
+486,924,88,4,Amazing experience!,Positive,17,2026-05-08
+487,558,16,2,Worth every penny,Neutral,36,2026-02-18
+488,205,81,2,Worth every penny,Negative,7,2026-03-22
+489,921,77,5,Worth every penny,Positive,81,2026-01-08
+490,631,78,2,Disappointing,Positive,23,2026-04-30
+491,631,50,3,Amazing experience!,Negative,3,2026-03-10
+492,230,99,3,Worth every penny,Negative,83,2025-12-26
+493,230,62,1,Incredible views,Neutral,43,2025-11-20
+494,650,81,1,Peaceful location,Neutral,99,2025-12-05
+495,650,5,2,Disappointing,Neutral,49,2026-01-06
+496,526,24,5,Must visit!,Neutral,3,2026-01-29
+497,526,49,2,Must visit!,Positive,96,2026-03-08
+498,577,11,1,Worth every penny,Positive,16,2026-01-19
+499,577,80,2,Disappointing,Positive,3,2025-12-04
+500,445,29,5,Worth every penny,Neutral,98,2026-03-21
+501,765,61,5,Amazing experience!,Negative,13,2026-02-06
+502,72,85,1,Must visit!,Positive,39,2026-04-25
+503,485,90,5,Average place,Positive,0,2025-12-09
+504,485,51,3,Peaceful location,Neutral,13,2026-02-10
+505,226,27,5,Peaceful location,Negative,23,2026-04-17
+506,619,45,4,Must visit!,Negative,23,2026-04-19
+507,118,7,1,Must visit!,Neutral,75,2026-02-23
+508,118,96,3,Disappointing,Negative,28,2025-11-22
+509,333,76,3,Average place,Positive,8,2026-03-25
+510,333,98,5,Not as expected,Negative,87,2025-12-26
+511,885,70,5,Not as expected,Positive,58,2025-11-26
+512,885,21,3,Not as expected,Negative,82,2026-02-22
+513,828,87,4,Not as expected,Neutral,25,2026-01-27
+514,828,66,1,Great destination!,Neutral,19,2026-03-08
+515,968,99,5,Incredible views,Neutral,19,2026-03-04
+516,968,28,5,Great destination!,Negative,97,2026-03-01
+517,276,35,5,Worth every penny,Positive,34,2026-01-19
+518,186,68,5,Amazing experience!,Positive,50,2026-04-29
+519,186,69,2,Peaceful location,Negative,90,2026-05-02
+520,972,39,2,Must visit!,Neutral,29,2025-12-12
+521,972,67,5,Incredible views,Neutral,26,2026-04-14
+522,167,57,5,Peaceful location,Positive,72,2026-03-19
+523,167,44,4,Not as expected,Negative,76,2026-03-05
+524,851,92,2,Peaceful location,Positive,68,2026-02-01
+525,851,36,3,Incredible views,Neutral,73,2026-02-09
+526,125,27,3,Peaceful location,Negative,66,2025-11-30
+527,125,14,4,Incredible views,Positive,92,2025-11-27
+528,871,68,4,Great destination!,Neutral,41,2026-04-05
+529,871,55,2,Great destination!,Neutral,35,2025-12-14
+530,764,38,1,Disappointing,Neutral,74,2026-01-26
+531,545,31,5,Not as expected,Neutral,92,2026-03-15
+532,545,97,1,Peaceful location,Neutral,56,2025-12-30
+533,576,25,2,Worth every penny,Negative,18,2026-01-20
+534,576,65,2,Amazing experience!,Neutral,98,2025-11-30
+535,867,59,1,Incredible views,Positive,64,2026-05-07
+536,966,11,3,Not as expected,Neutral,56,2025-12-10
+537,223,21,1,Incredible views,Negative,34,2025-12-25
+538,223,73,2,Incredible views,Neutral,91,2026-02-13
+539,354,89,4,Great destination!,Positive,63,2025-11-25
+540,354,96,2,Average place,Negative,65,2026-04-20
+541,501,69,5,Peaceful location,Neutral,48,2026-02-08
+542,114,36,1,Not as expected,Positive,99,2026-01-06
+543,114,89,2,Must visit!,Positive,5,2025-12-28
+544,383,40,2,Must visit!,Positive,35,2026-03-13
+545,977,35,4,Average place,Negative,99,2026-04-16
+546,935,6,2,Peaceful location,Negative,43,2025-12-22
+547,759,26,3,Great destination!,Neutral,86,2025-12-08
+548,803,96,4,Great destination!,Positive,59,2025-12-01
+549,98,26,1,Not as expected,Negative,6,2025-12-20
+550,920,52,1,Not as expected,Negative,78,2026-04-20
+551,920,72,1,Worth every penny,Positive,53,2026-01-14
+552,184,50,1,Amazing experience!,Neutral,85,2026-03-04
+553,184,30,2,Disappointing,Neutral,23,2026-02-17
+554,197,87,5,Incredible views,Negative,12,2026-02-26
+555,686,98,2,Incredible views,Positive,56,2026-05-10
+556,686,22,3,Worth every penny,Neutral,11,2026-01-04
+557,974,94,5,Incredible views,Negative,27,2026-01-20
+558,974,69,4,Disappointing,Negative,55,2026-05-03
+559,378,14,4,Not as expected,Positive,75,2026-04-23
+560,92,96,3,Disappointing,Neutral,84,2026-02-21
+561,92,65,3,Disappointing,Neutral,80,2026-04-29
+562,604,44,2,Peaceful location,Neutral,64,2026-04-25
+563,604,34,1,Must visit!,Positive,54,2026-03-12
+564,314,70,1,Incredible views,Positive,69,2026-02-22
+565,314,9,5,Average place,Neutral,37,2026-03-12
+566,321,14,3,Incredible views,Positive,42,2026-02-14
+567,321,8,1,Average place,Negative,15,2026-03-20
+568,344,11,4,Incredible views,Neutral,37,2025-12-12
+569,740,68,5,Peaceful location,Negative,5,2026-01-23
+570,681,96,3,Amazing experience!,Neutral,95,2025-12-22
+571,679,88,3,Incredible views,Positive,59,2026-02-14
+572,381,58,3,Peaceful location,Negative,43,2026-02-23
+573,212,66,5,Amazing experience!,Positive,53,2025-12-26
+574,212,86,3,Average place,Positive,63,2026-05-12
+575,215,61,1,Amazing experience!,Neutral,59,2026-03-31
+576,592,38,3,Great destination!,Neutral,11,2025-12-13
+577,592,9,2,Incredible views,Positive,92,2026-03-15
+578,7,12,5,Average place,Neutral,73,2025-11-19
+579,7,84,1,Incredible views,Negative,93,2026-01-17
+580,160,88,2,Average place,Positive,37,2025-11-30
+581,651,85,2,Must visit!,Positive,17,2026-01-03
+582,812,4,3,Average place,Neutral,48,2025-11-17
+583,812,7,1,Incredible views,Negative,20,2026-04-08
+584,85,96,4,Incredible views,Positive,92,2026-03-07
+585,85,43,2,Worth every penny,Neutral,35,2026-01-06
+586,397,46,2,Incredible views,Negative,74,2025-11-14
+587,397,13,4,Incredible views,Positive,62,2026-02-28
+588,961,51,2,Incredible views,Negative,49,2025-12-12
+589,498,25,4,Average place,Positive,96,2025-11-29
+590,733,52,5,Incredible views,Neutral,59,2026-01-12
+591,733,37,5,Great destination!,Neutral,20,2026-02-04
+592,493,96,4,Not as expected,Neutral,75,2025-11-27
+593,493,27,5,Average place,Negative,15,2025-11-30
+594,957,84,2,Not as expected,Negative,28,2026-04-12
+595,957,66,1,Disappointing,Negative,68,2026-04-21
+596,760,73,5,Worth every penny,Positive,75,2025-11-19
+597,760,42,4,Amazing experience!,Neutral,81,2026-04-01
+598,540,97,2,Must visit!,Negative,80,2025-12-25
+599,589,35,1,Great destination!,Negative,69,2026-02-03
+600,474,32,3,Incredible views,Positive,12,2026-04-04
+601,474,46,2,Must visit!,Positive,64,2026-01-20
+602,50,7,3,Must visit!,Neutral,79,2026-03-25
+603,50,58,4,Must visit!,Negative,21,2026-02-08
+604,862,71,2,Disappointing,Negative,4,2026-04-21
+605,376,53,5,Incredible views,Positive,5,2026-01-28
+606,536,34,4,Amazing experience!,Positive,19,2025-12-30
+607,857,55,3,Must visit!,Neutral,97,2025-12-08
+608,353,13,4,Worth every penny,Positive,6,2026-02-16
+609,353,14,4,Peaceful location,Positive,87,2026-01-27
+610,934,62,1,Must visit!,Neutral,4,2026-05-12
+611,37,97,1,Worth every penny,Neutral,16,2026-02-07
+612,37,35,3,Average place,Positive,37,2026-02-24
+613,698,93,5,Worth every penny,Positive,8,2025-11-30
+614,698,23,1,Great destination!,Negative,58,2026-01-19
+615,308,47,4,Worth every penny,Positive,86,2026-02-27
+616,419,8,4,Incredible views,Positive,43,2026-02-25
+617,419,80,5,Not as expected,Neutral,12,2025-12-24
+618,779,28,4,Must visit!,Negative,29,2026-02-12
+619,165,30,5,Not as expected,Neutral,15,2025-11-30
+620,328,82,1,Incredible views,Neutral,82,2026-03-18
+621,328,75,1,Not as expected,Positive,33,2026-04-14
+622,152,96,4,Great destination!,Positive,95,2026-02-28
+623,152,34,1,Worth every penny,Neutral,89,2026-02-18
+624,472,32,1,Peaceful location,Neutral,42,2026-03-30
+625,444,38,4,Must visit!,Positive,57,2026-03-26
+626,273,48,4,Amazing experience!,Negative,86,2026-02-19
+627,663,92,2,Must visit!,Negative,7,2026-01-26
+628,663,23,5,Incredible views,Positive,11,2026-02-28
+629,981,81,1,Disappointing,Negative,79,2026-02-18
+630,787,10,2,Amazing experience!,Positive,22,2026-04-26
+631,533,57,3,Average place,Negative,68,2026-02-07
+632,533,83,4,Great destination!,Neutral,85,2026-03-07
+633,20,68,3,Amazing experience!,Positive,62,2026-04-17
+634,480,1,3,Average place,Neutral,17,2026-05-01
+635,480,38,2,Average place,Positive,66,2025-11-27
+636,676,99,5,Disappointing,Negative,78,2026-04-05
+637,676,16,1,Great destination!,Neutral,10,2026-04-15
+638,523,82,5,Great destination!,Positive,71,2026-04-05
+639,103,56,4,Must visit!,Negative,30,2026-02-22
+640,103,23,2,Amazing experience!,Negative,23,2025-12-01
+641,630,23,5,Must visit!,Negative,49,2026-03-03
+642,630,24,5,Must visit!,Neutral,76,2026-01-15
+643,965,96,3,Not as expected,Positive,65,2026-04-01
+644,965,43,2,Must visit!,Neutral,7,2025-11-19
+645,909,72,2,Great destination!,Neutral,83,2026-01-13
+646,12,34,1,Disappointing,Positive,9,2026-02-14
+647,661,33,5,Must visit!,Neutral,38,2025-12-11
+648,661,17,5,Must visit!,Positive,66,2026-04-19
+649,410,82,1,Not as expected,Negative,56,2025-11-25
+650,410,17,3,Disappointing,Positive,67,2026-03-30
+651,277,28,4,Not as expected,Negative,43,2026-03-24
+652,277,90,1,Incredible views,Negative,87,2025-12-26
+653,143,49,2,Must visit!,Positive,56,2026-02-11
+654,143,23,2,Incredible views,Positive,16,2026-01-06
+655,504,42,1,Great destination!,Positive,60,2026-03-30
+656,504,23,4,Incredible views,Positive,32,2026-03-18
+657,878,23,2,Amazing experience!,Neutral,48,2026-04-14
+658,878,82,5,Disappointing,Positive,78,2026-04-03
+659,349,64,1,Average place,Positive,76,2026-01-23
+660,349,62,3,Great destination!,Neutral,94,2025-11-27
+661,316,76,2,Amazing experience!,Positive,62,2026-05-02
+662,960,41,4,Amazing experience!,Negative,7,2025-12-15
+663,772,5,5,Worth every penny,Neutral,71,2025-12-09
+664,304,40,5,Worth every penny,Neutral,6,2026-01-27
+665,304,21,3,Peaceful location,Neutral,3,2025-12-07
+666,342,100,3,Must visit!,Positive,30,2026-01-25
+667,342,26,5,Disappointing,Positive,16,2025-12-16
+668,24,47,2,Disappointing,Positive,95,2026-05-11
+669,24,74,5,Worth every penny,Negative,40,2025-12-20
+670,574,84,4,Worth every penny,Positive,17,2026-03-02
+671,18,74,4,Must visit!,Negative,99,2026-02-09
+672,528,23,1,Great destination!,Neutral,4,2026-02-07
+673,601,86,3,Must visit!,Positive,22,2026-02-19
+674,509,95,2,Must visit!,Neutral,22,2025-12-27
+675,509,51,1,Peaceful location,Negative,49,2026-03-22
+676,508,38,4,Worth every penny,Neutral,55,2026-03-29
+677,712,1,4,Peaceful location,Neutral,63,2025-12-28
+678,712,98,3,Peaceful location,Positive,12,2026-01-04
+679,146,50,5,Amazing experience!,Positive,47,2026-01-22
+680,773,63,3,Must visit!,Positive,76,2026-05-10
+681,773,74,4,Incredible views,Positive,64,2025-12-21
+682,903,54,5,Great destination!,Neutral,63,2026-04-15
+683,903,94,5,Peaceful location,Negative,2,2025-12-10
+684,716,16,4,Peaceful location,Neutral,15,2026-04-12
+685,716,87,2,Worth every penny,Negative,44,2026-03-20
+686,572,59,4,Great destination!,Positive,96,2026-01-05
+687,967,56,2,Must visit!,Neutral,25,2025-11-21
+688,967,91,4,Amazing experience!,Positive,42,2026-02-16
+689,45,39,5,Incredible views,Negative,93,2026-01-14
+690,45,17,3,Average place,Negative,6,2026-01-01
+691,169,31,4,Great destination!,Positive,46,2026-03-24
+692,701,51,1,Not as expected,Positive,24,2026-01-20
+693,388,43,1,Worth every penny,Neutral,14,2026-01-05
+694,388,39,1,Must visit!,Negative,21,2026-02-01
+695,622,41,4,Must visit!,Positive,90,2026-04-24
+696,336,66,1,Must visit!,Neutral,1,2026-04-06
+697,336,4,1,Amazing experience!,Negative,92,2025-12-10
+698,432,81,4,Peaceful location,Positive,95,2026-02-22
+699,432,48,3,Amazing experience!,Neutral,90,2025-12-25
+700,331,99,2,Amazing experience!,Negative,69,2026-03-08
+701,556,69,5,Must visit!,Negative,46,2026-01-04
+702,556,99,1,Great destination!,Positive,31,2026-02-06
+703,694,72,3,Average place,Positive,37,2026-05-07
+704,822,74,2,Worth every penny,Negative,2,2026-03-08
+705,822,100,1,Great destination!,Neutral,7,2026-02-27
+706,587,69,4,Incredible views,Neutral,26,2026-03-31
+707,250,20,4,Not as expected,Negative,40,2026-01-09
+708,311,64,4,Incredible views,Negative,23,2026-03-22
+709,311,75,2,Incredible views,Positive,69,2026-05-06
+710,56,82,5,Worth every penny,Positive,27,2026-01-05
+711,56,19,4,Average place,Positive,91,2026-05-02
+712,993,2,4,Incredible views,Positive,55,2026-02-14
+713,104,52,4,Worth every penny,Neutral,3,2026-01-28
+714,104,4,1,Average place,Neutral,21,2025-12-23
+715,798,15,1,Disappointing,Negative,54,2025-11-22
+716,220,66,2,Peaceful location,Neutral,81,2025-12-07
+717,789,56,1,Disappointing,Neutral,88,2026-04-12
+718,453,38,4,Must visit!,Neutral,45,2026-02-26
+719,928,66,3,Disappointing,Negative,29,2026-03-01
+720,241,30,1,Must visit!,Positive,65,2026-04-21
+721,936,42,2,Incredible views,Neutral,1,2025-11-27
+722,954,88,4,Not as expected,Positive,43,2026-03-31
+723,567,67,4,Incredible views,Positive,93,2025-11-28
+724,567,66,3,Must visit!,Negative,72,2025-11-23
+725,102,82,1,Disappointing,Neutral,39,2026-02-02
+726,102,27,5,Peaceful location,Negative,22,2026-01-14
+727,471,77,2,Peaceful location,Neutral,2,2026-01-27
+728,554,87,4,Incredible views,Positive,54,2026-05-05
+729,112,19,4,Worth every penny,Neutral,77,2026-02-11
+730,112,21,4,Worth every penny,Negative,28,2026-03-03
+731,124,97,3,Amazing experience!,Positive,32,2026-04-17
+732,124,36,3,Worth every penny,Positive,9,2026-04-18
+733,664,68,1,Incredible views,Neutral,85,2026-03-20
+734,664,51,4,Disappointing,Negative,53,2026-04-26
+735,256,88,1,Great destination!,Negative,5,2026-01-14
+736,256,88,2,Amazing experience!,Neutral,73,2025-12-15
+737,406,30,4,Worth every penny,Positive,2,2026-02-12
+738,406,34,2,Amazing experience!,Positive,41,2025-12-15
+739,207,88,4,Amazing experience!,Positive,50,2026-04-19
+740,207,46,4,Must visit!,Negative,19,2026-02-22
+741,606,95,2,Peaceful location,Negative,13,2025-12-18
+742,606,65,4,Disappointing,Positive,0,2025-12-17
+743,744,27,2,Incredible views,Negative,85,2026-02-18
+744,120,25,1,Amazing experience!,Positive,84,2026-04-16
+745,91,99,4,Must visit!,Neutral,56,2026-03-19
+746,91,53,1,Must visit!,Positive,12,2026-04-14
+747,949,6,1,Average place,Positive,23,2026-02-28
+748,949,99,4,Disappointing,Negative,54,2026-04-25
+749,562,99,5,Must visit!,Positive,55,2026-04-25
+750,400,30,2,Must visit!,Neutral,52,2026-02-16
+751,400,50,4,Must visit!,Positive,55,2025-11-17
+752,882,22,4,Amazing experience!,Positive,32,2025-11-19
+753,882,64,3,Worth every penny,Positive,33,2026-03-06
+754,697,72,1,Amazing experience!,Positive,95,2026-04-03
+755,732,1,3,Disappointing,Positive,16,2026-02-08
