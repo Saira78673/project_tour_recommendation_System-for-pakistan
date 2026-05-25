@@ -3,7 +3,7 @@
 ║                         PERFECT UI REPLICA - V3.0                       ║
 ║                     ALL MOCK IMAGES IMPLEMENTED                         ║
 ║                    ERROR FIXED - EMPTY LABEL RESOLVED                   ║
-╚════════════════════════════════════════════════════════════════════════════╝
+╚═════════════════════════════════════════════════════════════════════════╝
 """
 
 import streamlit as st
@@ -119,7 +119,7 @@ global_stats = backend['global_stats']
 # ============================================================================
 # CUSTOM CSS & ASSETS - DYNAMIC LIGHT/DARK COMPATIBLE
 # ============================================================================
-@st.cache_data
+@st.cache_resource
 def get_static_assets():
     assets_dir = Path(__file__).parent / 'assets'
     bg_path = assets_dir / 'bg.jpg'
@@ -143,33 +143,25 @@ if 'assets' not in st.session_state:
 
 bg_b64, video_b64 = st.session_state.assets
 
-# Inject Video Background & CSS
+# Inject Video Background & CSS with working video implementation
 st.markdown(f"""
     <style>
-    /* Video Background Container */
+    /* Video Background Container - WORKS WITH STREAMLIT */
     #video-bg {{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         z-index: -2; 
-        filter: brightness(1.4) contrast(0.9) saturate(1.0); /* Increased brightness, lowered contrast */
         object-fit: cover;
         pointer-events: none;
+        filter: brightness(1.2) contrast(0.95);
     }}
 
-    /* Fallback image at the very bottom - VERY LIGHT */
-    #bg-fallback {{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -3;
-        background: url('data:image/jpeg;base64,{bg_b64}') no-repeat center center fixed;
-        background-size: cover;
-        opacity: 0.25; /* More visible fallback since video is very light */
+    /* Fallback background */
+    body {{
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
     }}
 
     /* Overlay for readability */
@@ -177,17 +169,11 @@ st.markdown(f"""
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.25); /* Light overlay for visibility */
+        width: 100%;
+        height: 100%;
+        background: rgba(26, 26, 46, 0.3);
         z-index: -1;
         pointer-events: none;
-    }}
-
-    @media (prefers-color-scheme: dark) {{
-        .video-overlay {{
-            background: rgba(0, 0, 0, 0.3); /* Darker overlay for dark mode */
-        }}
     }}
 
     /* FORCE TRANSPARENCY on all Streamlit layers to reveal video */
@@ -208,7 +194,7 @@ st.markdown(f"""
         :root {{
             --glass-bg: rgba(255, 255, 255, 0.8);
             --glass-border: rgba(0, 0, 0, 0.15);
-            --text-color: #000000; /* Pure black for maximum contrast */
+            --text-color: #000000;
         }}
     }}
 
@@ -293,10 +279,10 @@ st.markdown(f"""
     .js-plotly-plot .plotly .bg {{ fill: transparent !important; }}
     </style>
     
-    <video autoplay loop muted playsinline id="video-bg">
+    <video autoplay muted loop playsinline id="video-bg" style="display: block;">
         <source src="data:video/mp4;base64,{video_b64}" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
-    <div id="bg-fallback"></div>
     <div class="video-overlay"></div>
 """, unsafe_allow_html=True)
 
